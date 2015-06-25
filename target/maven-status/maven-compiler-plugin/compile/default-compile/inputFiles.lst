@@ -1,0 +1,6 @@
+/home/webonise/Documents/workspace-sts-3.6.4.RELEASE/TodoManager/src/main/java/todo/todoManager/model/package-info.java
+/home/webonise/Documents/workspace-sts-3.6.4.RELEASE/TodoManager/src/main/java/todo/todoManager/dao/TodoDAO.java
+/home/webonise/Documents/workspace-sts-3.6.4.RELEASE/TodoManager/src/main/java/todo/todoManager/app/App.java
+/home/webonise/Documents/workspace-sts-3.6.4.RELEASE/TodoManager/src/main/java/todo/todoManager/cryptography/StringEncryptor.java
+/home/webonise/Documents/workspace-sts-3.6.4.RELEASE/TodoManager/src/main/java/todo/todoManager/hibernateUtil/HibernateUtil.java
+/home/webonise/Documents/workspace-sts-3.6.4.RELEASE/TodoManager/src/main/java/todo/todoManager/model/Todo.java

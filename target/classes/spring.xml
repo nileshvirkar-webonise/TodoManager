@@ -17,6 +17,15 @@
 		<property name="password" value="${password}" />
 	</bean>
 
+	<bean id="dataSourceForJDBC"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="${driverClassName}" />
+		<property name="url" value="${url}" />
+		<property name="username" value="${username}" />
+		<property name="password" value="${password}" />
+	</bean>
+
+
 	<bean id="hibernate4AnnotatedSessionFactory"
 		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
@@ -54,7 +63,7 @@
 		<property name="provider" ref="bc">
 		</property>
 	</bean>
-	
+
 	<bean id="bc" class="com.sun.crypto.provider.SunJCE" />
-	
+
 </beans>
