@@ -15,7 +15,7 @@
 
 		<environment>development</environment>
 		<java-version>1.7</java-version>
-		
+
 	</properties>
 
 	<dependencies>
@@ -84,8 +84,13 @@
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
 		</dependency>
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcprov-jdk15on</artifactId>
+			<version>1.52</version>
+		</dependency>
 	</dependencies>
-	
+
 	<build>
 		<plugins>
 			<plugin>
@@ -100,7 +105,7 @@
 					<showDeprecation>true</showDeprecation>
 				</configuration>
 			</plugin>
-			</plugins>
-			</build>
-			
+		</plugins>
+	</build>
+
 </project>
