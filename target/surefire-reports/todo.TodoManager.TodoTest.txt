@@ -1,15 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: todo.TodoManager.TodoTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.444 sec <<< FAILURE!
-insertedDataShouldSameWithFecthedData(todo.TodoManager.TodoTest)  Time elapsed: 3.369 sec  <<< ERROR!
-java.lang.NullPointerException
-	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher.engineInit(Unknown Source)
-	at javax.crypto.Cipher.init(Cipher.java:1394)
-	at javax.crypto.Cipher.init(Cipher.java:1327)
-	at todo.todoManager.cryptography.StringEncryptor.getDecryptedString(StringEncryptor.java:97)
-	at todo.todoManager.dao.TodoDAO.getTodoForTitle(TodoDAO.java:70)
-	at todo.TodoManager.TodoTest.insertedDataShouldSameWithFecthedData(TodoTest.java:20)
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 3.438 sec <<< FAILURE!
+insertedDataShouldSameWithFecthedData(todo.TodoManager.TodoTest)  Time elapsed: 3.382 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<text1> but was:<null>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at todo.TodoManager.TodoTest.insertedDataShouldSameWithFecthedData(TodoTest.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

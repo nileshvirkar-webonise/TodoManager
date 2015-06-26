@@ -38,10 +38,13 @@ public class StringEncryptor {
 			InvalidKeySpecException, InvalidKeyException,
 			InvalidAlgorithmParameterException {
 
+		key1 = "Bar12345Bar12345";
+		
 		try {
-			SecretKeySpec key = new SecretKeySpec(key1.getBytes(),
+			 key = new SecretKeySpec(key1.getBytes(),
 					"AES");
-
+			logger.info("*****************" + key);
+			
 			paramSpec = new IvParameterSpec(ivBytes);
 
 			// Decrypt the message

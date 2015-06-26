@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="todo.TodoManager.TodoTest" time="3.369" errors="1" skipped="0">
+<testsuite tests="1" failures="1" name="todo.TodoManager.TodoTest" time="3.382" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
@@ -24,7 +24,7 @@
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Linux"/>
-    <property name="classworlds.conf" value="/home/webonise/Documents/workspace-sts-3.6.4.RELEASE/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf2910575165588535018.tmp"/>
+    <property name="classworlds.conf" value="/home/webonise/Documents/workspace-sts-3.6.4.RELEASE/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf5343827119987289466.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -60,12 +60,613 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="todo.TodoManager.TodoTest" name="insertedDataShouldSameWithFecthedData" time="3.369">
-    <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher.engineInit(Unknown Source)
-	at javax.crypto.Cipher.init(Cipher.java:1394)
-	at javax.crypto.Cipher.init(Cipher.java:1327)
-	at todo.todoManager.cryptography.StringEncryptor.getDecryptedString(StringEncryptor.java:97)
+  <testcase classname="todo.TodoManager.TodoTest" name="insertedDataShouldSameWithFecthedData" time="3.382">
+    <failure message="expected:&lt;text1&gt; but was:&lt;null&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;text1&gt; but was:&lt;null&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at todo.TodoManager.TodoTest.insertedDataShouldSameWithFecthedData(TodoTest.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-out>2015-06-26 13:34:15 DEBUG StandardEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+2015-06-26 13:34:15 DEBUG StandardEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-06-26 13:34:15 DEBUG StandardEnvironment:126 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2015-06-26 13:34:15 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@49e4cb85: startup date [Fri Jun 26 13:34:15 IST 2015]; root of context hierarchy
+2015-06-26 13:34:15 DEBUG StandardEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+2015-06-26 13:34:15 DEBUG StandardEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2015-06-26 13:34:15 DEBUG StandardEnvironment:126 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2015-06-26 13:34:15 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring.xml]
+2015-06-26 13:34:15 DEBUG DefaultDocumentLoader:73 - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2015-06-26 13:34:15 DEBUG PluggableSchemaResolver:141 - Loading schema mappings from [META-INF/spring.schemas]
+2015-06-26 13:34:15 DEBUG PluggableSchemaResolver:147 - Loaded schema mappings: {http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop-4.1.xsd=org/springframework/aop/config/spring-aop-4.1.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.1.xsd=org/springframework/jdbc/config/spring-jdbc-4.1.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-4.1.xsd, http://www.springframework.org/schema/lang/spring-lang-4.1.xsd=org/springframework/scripting/config/spring-lang-4.1.xsd, http://www.springframework.org/schema/context/spring-context-4.0.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-4.1.xsd=org/springframework/beans/factory/xml/spring-tool-4.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-4.1.xsd=org/springframework/ejb/config/spring-jee-4.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-4.1.xsd, http://www.springframework.org/schema/cache/spring-cache-4.1.xsd=org/springframework/cache/config/spring-cache-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-4.0.xsd=org/springframework/aop/config/spring-aop-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd=org/springframework/jdbc/config/spring-jdbc-4.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-4.0.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.1.xsd=org/springframework/beans/factory/xml/spring-beans-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-4.0.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-3.2.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-4.0.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/task/spring-task-4.1.xsd=org/springframework/scheduling/config/spring-task-4.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-4.1.xsd=org/springframework/transaction/config/spring-tx-4.1.xsd, http://www.springframework.org/schema/cache/spring-cache-4.0.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.0.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-4.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/task/spring-task-4.0.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-4.0.xsd=org/springframework/transaction/config/spring-tx-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/util/spring-util-4.1.xsd=org/springframework/beans/factory/xml/spring-util-4.1.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/util/spring-util-4.0.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-4.1.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-4.1.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-4.1.xsd, http://www.springframework.org/schema/context/spring-context-4.1.xsd=org/springframework/context/config/spring-context-4.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-4.1.xsd}
+2015-06-26 13:34:15 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-4.1.xsd
+2015-06-26 13:34:15 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/context/spring-context.xsd] in classpath: org/springframework/context/config/spring-context-4.1.xsd
+2015-06-26 13:34:15 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/tool/spring-tool-4.1.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-4.1.xsd
+2015-06-26 13:34:15 DEBUG DefaultBeanDefinitionDocumentReader:98 - Loading bean definitions
+2015-06-26 13:34:15 DEBUG DefaultNamespaceHandlerResolver:157 - Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+2015-06-26 13:34:15 DEBUG XmlBeanDefinitionReader:224 - Loaded 9 bean definitions from location pattern [spring.xml]
+2015-06-26 13:34:15 DEBUG ClassPathXmlApplicationContext:540 - Bean factory for org.springframework.context.support.ClassPathXmlApplicationContext@49e4cb85: org.springframework.beans.factory.support.DefaultListableBeanFactory@4923ab24: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,dataSourceForJDBC,hibernate4AnnotatedSessionFactory,hibernateUtil,bc,mySaltGenerator,hibernateStringEncryptor,environmentVariablesConfiguration]; root of factory hierarchy
+2015-06-26 13:34:15 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean &apos;org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0&apos;
+2015-06-26 13:34:15 DEBUG DefaultListableBeanFactory:450 - Creating instance of bean &apos;org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0&apos;
+2015-06-26 13:34:15 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean &apos;org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0&apos; to allow for resolving potential circular references
+2015-06-26 13:34:15 DEBUG DefaultListableBeanFactory:478 - Finished creating instance of bean &apos;org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0&apos;
+2015-06-26 13:34:15 DEBUG MutablePropertySources:109 - Adding [environmentProperties] PropertySource with lowest search precedence
+2015-06-26 13:34:15 INFO  PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [config.properties]
+2015-06-26 13:34:15 DEBUG MutablePropertySources:109 - Adding [localProperties] PropertySource with lowest search precedence
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;driverClassName&apos; in [environmentProperties]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;driverClassName&apos; in [systemProperties]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;driverClassName&apos; in [systemEnvironment]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:103 - Could not find key &apos;driverClassName&apos; in any property source. Returning [null]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;driverClassName&apos; in [localProperties]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:90 - Found key &apos;driverClassName&apos; in [localProperties] with type [String] and value &apos;com.mysql.jdbc.Driver&apos;
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;url&apos; in [environmentProperties]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;url&apos; in [systemProperties]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;url&apos; in [systemEnvironment]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:103 - Could not find key &apos;url&apos; in any property source. Returning [null]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;url&apos; in [localProperties]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:90 - Found key &apos;url&apos; in [localProperties] with type [String] and value &apos;jdbc:mysql://localhost:3306/todo&apos;
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;username&apos; in [environmentProperties]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;username&apos; in [systemProperties]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;username&apos; in [systemEnvironment]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:103 - Could not find key &apos;username&apos; in any property source. Returning [null]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;username&apos; in [localProperties]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:90 - Found key &apos;username&apos; in [localProperties] with type [String] and value &apos;root&apos;
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;password&apos; in [environmentProperties]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;password&apos; in [systemProperties]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;password&apos; in [systemEnvironment]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:103 - Could not find key &apos;password&apos; in any property source. Returning [null]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;password&apos; in [localProperties]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:90 - Found key &apos;password&apos; in [localProperties] with type [String] and value &apos;root&apos;
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;driverClassName&apos; in [environmentProperties]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;driverClassName&apos; in [systemProperties]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;driverClassName&apos; in [systemEnvironment]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:103 - Could not find key &apos;driverClassName&apos; in any property source. Returning [null]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;driverClassName&apos; in [localProperties]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:90 - Found key &apos;driverClassName&apos; in [localProperties] with type [String] and value &apos;com.mysql.jdbc.Driver&apos;
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;url&apos; in [environmentProperties]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;url&apos; in [systemProperties]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;url&apos; in [systemEnvironment]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:103 - Could not find key &apos;url&apos; in any property source. Returning [null]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;url&apos; in [localProperties]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:90 - Found key &apos;url&apos; in [localProperties] with type [String] and value &apos;jdbc:mysql://localhost:3306/todo&apos;
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;username&apos; in [environmentProperties]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;username&apos; in [systemProperties]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;username&apos; in [systemEnvironment]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:103 - Could not find key &apos;username&apos; in any property source. Returning [null]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;username&apos; in [localProperties]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:90 - Found key &apos;username&apos; in [localProperties] with type [String] and value &apos;root&apos;
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;password&apos; in [environmentProperties]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;password&apos; in [systemProperties]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;password&apos; in [systemEnvironment]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:103 - Could not find key &apos;password&apos; in any property source. Returning [null]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;password&apos; in [localProperties]
+2015-06-26 13:34:15 DEBUG PropertySourcesPropertyResolver:90 - Found key &apos;password&apos; in [localProperties] with type [String] and value &apos;root&apos;
+2015-06-26 13:34:15 DEBUG ClassPathXmlApplicationContext:646 - Unable to locate MessageSource with name &apos;messageSource&apos;: using default [org.springframework.context.support.DelegatingMessageSource@7364985f]
+2015-06-26 13:34:15 DEBUG ClassPathXmlApplicationContext:670 - Unable to locate ApplicationEventMulticaster with name &apos;applicationEventMulticaster&apos;: using default [org.springframework.context.event.SimpleApplicationEventMulticaster@3f200884]
+2015-06-26 13:34:15 DEBUG DefaultListableBeanFactory:724 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4923ab24: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,dataSourceForJDBC,hibernate4AnnotatedSessionFactory,hibernateUtil,bc,mySaltGenerator,hibernateStringEncryptor,environmentVariablesConfiguration]; root of factory hierarchy
+2015-06-26 13:34:15 DEBUG DefaultListableBeanFactory:248 - Returning cached instance of singleton bean &apos;org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0&apos;
+2015-06-26 13:34:15 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean &apos;dataSource&apos;
+2015-06-26 13:34:15 DEBUG DefaultListableBeanFactory:450 - Creating instance of bean &apos;dataSource&apos;
+2015-06-26 13:34:15 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean &apos;dataSource&apos; to allow for resolving potential circular references
+2015-06-26 13:34:15 DEBUG DefaultListableBeanFactory:478 - Finished creating instance of bean &apos;dataSource&apos;
+2015-06-26 13:34:15 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean &apos;dataSourceForJDBC&apos;
+2015-06-26 13:34:15 DEBUG DefaultListableBeanFactory:450 - Creating instance of bean &apos;dataSourceForJDBC&apos;
+2015-06-26 13:34:15 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean &apos;dataSourceForJDBC&apos; to allow for resolving potential circular references
+2015-06-26 13:34:15 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2015-06-26 13:34:15 DEBUG DefaultListableBeanFactory:478 - Finished creating instance of bean &apos;dataSourceForJDBC&apos;
+2015-06-26 13:34:15 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean &apos;hibernate4AnnotatedSessionFactory&apos;
+2015-06-26 13:34:15 DEBUG DefaultListableBeanFactory:450 - Creating instance of bean &apos;hibernate4AnnotatedSessionFactory&apos;
+2015-06-26 13:34:15 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean &apos;hibernate4AnnotatedSessionFactory&apos; to allow for resolving potential circular references
+2015-06-26 13:34:15 DEBUG DefaultListableBeanFactory:248 - Returning cached instance of singleton bean &apos;dataSource&apos;
+2015-06-26 13:34:15 DEBUG DefaultListableBeanFactory:1616 - Invoking afterPropertiesSet() on bean with name &apos;hibernate4AnnotatedSessionFactory&apos;
+2015-06-26 13:34:15 DEBUG logging:194 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration boolean -&gt; org.hibernate.type.BooleanType@56de5251
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration boolean -&gt; org.hibernate.type.BooleanType@56de5251
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Boolean -&gt; org.hibernate.type.BooleanType@56de5251
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration numeric_boolean -&gt; org.hibernate.type.NumericBooleanType@71b1176b
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration true_false -&gt; org.hibernate.type.TrueFalseType@51e5fc98
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration yes_no -&gt; org.hibernate.type.YesNoType@7ee955a8
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration byte -&gt; org.hibernate.type.ByteType@161479c6
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration byte -&gt; org.hibernate.type.ByteType@161479c6
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Byte -&gt; org.hibernate.type.ByteType@161479c6
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration character -&gt; org.hibernate.type.CharacterType@778d1062
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration char -&gt; org.hibernate.type.CharacterType@778d1062
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Character -&gt; org.hibernate.type.CharacterType@778d1062
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration short -&gt; org.hibernate.type.ShortType@5ccddd20
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration short -&gt; org.hibernate.type.ShortType@5ccddd20
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Short -&gt; org.hibernate.type.ShortType@5ccddd20
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration integer -&gt; org.hibernate.type.IntegerType@59d016c9
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration int -&gt; org.hibernate.type.IntegerType@59d016c9
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Integer -&gt; org.hibernate.type.IntegerType@59d016c9
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration long -&gt; org.hibernate.type.LongType@7adda9cc
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration long -&gt; org.hibernate.type.LongType@7adda9cc
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Long -&gt; org.hibernate.type.LongType@7adda9cc
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration float -&gt; org.hibernate.type.FloatType@2ea227af
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration float -&gt; org.hibernate.type.FloatType@2ea227af
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Float -&gt; org.hibernate.type.FloatType@2ea227af
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration double -&gt; org.hibernate.type.DoubleType@3c22fc4c
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration double -&gt; org.hibernate.type.DoubleType@3c22fc4c
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Double -&gt; org.hibernate.type.DoubleType@3c22fc4c
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration big_decimal -&gt; org.hibernate.type.BigDecimalType@36c88a32
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration java.math.BigDecimal -&gt; org.hibernate.type.BigDecimalType@36c88a32
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration big_integer -&gt; org.hibernate.type.BigIntegerType@7ce3cb8e
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration java.math.BigInteger -&gt; org.hibernate.type.BigIntegerType@7ce3cb8e
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration string -&gt; org.hibernate.type.StringType@22a637e7
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.String -&gt; org.hibernate.type.StringType@22a637e7
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration nstring -&gt; org.hibernate.type.StringNVarcharType@2473d930
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration ncharacter -&gt; org.hibernate.type.CharacterNCharType@5ae50ce6
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration url -&gt; org.hibernate.type.UrlType@48e4374
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration java.net.URL -&gt; org.hibernate.type.UrlType@48e4374
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration date -&gt; org.hibernate.type.DateType@470f1802
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Date -&gt; org.hibernate.type.DateType@470f1802
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration time -&gt; org.hibernate.type.TimeType@70e8f8e
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Time -&gt; org.hibernate.type.TimeType@70e8f8e
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration timestamp -&gt; org.hibernate.type.TimestampType@e056f20
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Timestamp -&gt; org.hibernate.type.TimestampType@e056f20
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.Date -&gt; org.hibernate.type.TimestampType@e056f20
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration dbtimestamp -&gt; org.hibernate.type.DbTimestampType@10e41621
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration calendar -&gt; org.hibernate.type.CalendarType@a9cd3b1
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.Calendar -&gt; org.hibernate.type.CalendarType@a9cd3b1
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.GregorianCalendar -&gt; org.hibernate.type.CalendarType@a9cd3b1
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration calendar_date -&gt; org.hibernate.type.CalendarDateType@9225652
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration locale -&gt; org.hibernate.type.LocaleType@63355449
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.Locale -&gt; org.hibernate.type.LocaleType@63355449
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration currency -&gt; org.hibernate.type.CurrencyType@c267ef4
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.Currency -&gt; org.hibernate.type.CurrencyType@c267ef4
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration timezone -&gt; org.hibernate.type.TimeZoneType@1ddf84b8
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.TimeZone -&gt; org.hibernate.type.TimeZoneType@1ddf84b8
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration class -&gt; org.hibernate.type.ClassType@636be97c
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Class -&gt; org.hibernate.type.ClassType@636be97c
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration uuid-binary -&gt; org.hibernate.type.UUIDBinaryType@4facf68f
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.UUID -&gt; org.hibernate.type.UUIDBinaryType@4facf68f
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration uuid-char -&gt; org.hibernate.type.UUIDCharType@15c43bd9
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration pg-uuid -&gt; org.hibernate.type.PostgresUUIDType@39529185
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration binary -&gt; org.hibernate.type.BinaryType@27ce24aa
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration byte[] -&gt; org.hibernate.type.BinaryType@27ce24aa
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration [B -&gt; org.hibernate.type.BinaryType@27ce24aa
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration wrapper-binary -&gt; org.hibernate.type.WrapperBinaryType@647e447
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration Byte[] -&gt; org.hibernate.type.WrapperBinaryType@647e447
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration [Ljava.lang.Byte; -&gt; org.hibernate.type.WrapperBinaryType@647e447
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration image -&gt; org.hibernate.type.ImageType@130161f7
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration characters -&gt; org.hibernate.type.CharArrayType@7722c3c3
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration char[] -&gt; org.hibernate.type.CharArrayType@7722c3c3
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration [C -&gt; org.hibernate.type.CharArrayType@7722c3c3
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration wrapper-characters -&gt; org.hibernate.type.CharacterArrayType@16ec5519
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration [Ljava.lang.Character; -&gt; org.hibernate.type.CharacterArrayType@16ec5519
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration Character[] -&gt; org.hibernate.type.CharacterArrayType@16ec5519
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration text -&gt; org.hibernate.type.TextType@5119fb47
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration ntext -&gt; org.hibernate.type.NTextType@7714e963
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration blob -&gt; org.hibernate.type.BlobType@1d9b7cce
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Blob -&gt; org.hibernate.type.BlobType@1d9b7cce
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration materialized_blob -&gt; org.hibernate.type.MaterializedBlobType@14dd9eb7
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration clob -&gt; org.hibernate.type.ClobType@2e005c4b
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Clob -&gt; org.hibernate.type.ClobType@2e005c4b
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration nclob -&gt; org.hibernate.type.NClobType@12468a38
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.NClob -&gt; org.hibernate.type.NClobType@12468a38
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration materialized_clob -&gt; org.hibernate.type.MaterializedClobType@5876a9af
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration materialized_nclob -&gt; org.hibernate.type.MaterializedNClobType@6572421
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration serializable -&gt; org.hibernate.type.SerializableType@37afeb11
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration object -&gt; org.hibernate.type.ObjectType@399f45b1
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Object -&gt; org.hibernate.type.ObjectType@399f45b1
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration imm_date -&gt; org.hibernate.type.AdaptedImmutableType@79e2c065
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration imm_time -&gt; org.hibernate.type.AdaptedImmutableType@3a93b025
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration imm_timestamp -&gt; org.hibernate.type.AdaptedImmutableType@35cabb2a
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration imm_dbtimestamp -&gt; org.hibernate.type.AdaptedImmutableType@7e07db1f
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration imm_calendar -&gt; org.hibernate.type.AdaptedImmutableType@1189dd52
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration imm_calendar_date -&gt; org.hibernate.type.AdaptedImmutableType@36bc55de
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration imm_binary -&gt; org.hibernate.type.AdaptedImmutableType@564fabc8
+2015-06-26 13:34:15 DEBUG BasicTypeRegistry:146 - Adding type registration imm_serializable -&gt; org.hibernate.type.AdaptedImmutableType@16d04d3d
+2015-06-26 13:34:15 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2015-06-26 13:34:15 INFO  Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2015-06-26 13:34:15 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2015-06-26 13:34:15 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2015-06-26 13:34:15 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid2] -&gt; [org.hibernate.id.UUIDGenerator]
+2015-06-26 13:34:15 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [guid] -&gt; [org.hibernate.id.GUIDGenerator]
+2015-06-26 13:34:15 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid] -&gt; [org.hibernate.id.UUIDHexGenerator]
+2015-06-26 13:34:15 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid.hex] -&gt; [org.hibernate.id.UUIDHexGenerator]
+2015-06-26 13:34:15 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [hilo] -&gt; [org.hibernate.id.TableHiLoGenerator]
+2015-06-26 13:34:15 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [assigned] -&gt; [org.hibernate.id.Assigned]
+2015-06-26 13:34:15 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [identity] -&gt; [org.hibernate.id.IdentityGenerator]
+2015-06-26 13:34:15 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [select] -&gt; [org.hibernate.id.SelectGenerator]
+2015-06-26 13:34:15 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [sequence] -&gt; [org.hibernate.id.SequenceGenerator]
+2015-06-26 13:34:15 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [seqhilo] -&gt; [org.hibernate.id.SequenceHiLoGenerator]
+2015-06-26 13:34:15 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [increment] -&gt; [org.hibernate.id.IncrementGenerator]
+2015-06-26 13:34:15 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [foreign] -&gt; [org.hibernate.id.ForeignGenerator]
+2015-06-26 13:34:15 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [sequence-identity] -&gt; [org.hibernate.id.SequenceIdentityGenerator]
+2015-06-26 13:34:15 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [enhanced-sequence] -&gt; [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2015-06-26 13:34:15 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [enhanced-table] -&gt; [org.hibernate.id.enhanced.TableGenerator]
+2015-06-26 13:34:15 DEBUG IntegratorServiceImpl:63 - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2015-06-26 13:34:15 DEBUG IntegratorServiceImpl:63 - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2015-06-26 13:34:15 DEBUG IntegratorServiceImpl:63 - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2015-06-26 13:34:15 DEBUG StrategySelectorImpl:79 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5] -&gt; [org.hibernate.dialect.MySQL5Dialect] (replacing [org.hibernate.dialect.MySQL5Dialect])
+2015-06-26 13:34:15 DEBUG StrategySelectorImpl:79 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5InnoDB] -&gt; [org.hibernate.dialect.MySQL5InnoDBDialect] (replacing [org.hibernate.dialect.MySQL5InnoDBDialect])
+2015-06-26 13:34:15 DEBUG ServiceBinding:85 - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2015-06-26 13:34:15 DEBUG Configuration:1843 - Preparing to build session factory with filters : {}
+2015-06-26 13:34:16 DEBUG JdbcServicesImpl:128 - Database -&gt;
+       name : MySQL
+    version : 5.5.43-0ubuntu0.14.04.1
+      major : 5
+      minor : 5
+2015-06-26 13:34:16 DEBUG JdbcServicesImpl:139 - Driver -&gt;
+       name : MySQL Connector Java
+    version : mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )
+      major : 5
+      minor : 1
+2015-06-26 13:34:16 DEBUG JdbcServicesImpl:150 - JDBC version : 4.0
+2015-06-26 13:34:16 DEBUG StandardRefCursorSupport:187 - Unexpected error trying to gauge level of JDBC REF_CURSOR support : null
+2015-06-26 13:34:16 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2015-06-26 13:34:16 DEBUG Configuration:3805 - Processing hbm.xml files
+2015-06-26 13:34:16 DEBUG Configuration:3835 - Process annotated classes
+2015-06-26 13:34:16 DEBUG AnnotationBinder:601 - Binding entity from annotated class: todo.todoManager.model.Todo
+2015-06-26 13:34:16 DEBUG AnnotationBinder:1495 - Binding type definition: encryptedString
+2015-06-26 13:34:16 DEBUG Configuration:3091 - Added encryptedString with class org.jasypt.hibernate4.type.EncryptedStringType
+2015-06-26 13:34:16 DEBUG Ejb3Column:240 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName&apos;DTYPE&apos;, discriminatorTypeName=&apos;string&apos;}
+2015-06-26 13:34:16 DEBUG AnnotationBinder:1185 - No value specified for &apos;javax.persistence.sharedCache.mode&apos;; using UNSPECIFIED
+2015-06-26 13:34:16 DEBUG EntityBinder:399 - Import with entity name Todo
+2015-06-26 13:34:16 DEBUG EntityBinder:612 - Bind entity todo.todoManager.model.Todo on table Todo
+2015-06-26 13:34:16 DEBUG Ejb3Column:240 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Todo), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2015-06-26 13:34:16 DEBUG PropertyBinder:185 - MetadataSourceProcessor property id with lazy=false
+2015-06-26 13:34:16 DEBUG AbstractPropertyHolder:106 - Attempting to locate auto-apply AttributeConverter for property [todo.todoManager.model.Todo:id]
+2015-06-26 13:34:16 DEBUG SimpleValueBinder:388 - building SimpleValue for id
+2015-06-26 13:34:16 DEBUG PropertyBinder:271 - Building property id
+2015-06-26 13:34:16 DEBUG Ejb3Column:240 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Todo), mappingColumn=text, insertable=true, updatable=true, unique=false}
+2015-06-26 13:34:16 DEBUG PropertyBinder:185 - MetadataSourceProcessor property text with lazy=false
+2015-06-26 13:34:16 DEBUG AbstractPropertyHolder:106 - Attempting to locate auto-apply AttributeConverter for property [todo.todoManager.model.Todo:text]
+2015-06-26 13:34:16 DEBUG SimpleValueBinder:388 - building SimpleValue for text
+2015-06-26 13:34:16 DEBUG PropertyBinder:271 - Building property text
+2015-06-26 13:34:16 DEBUG Ejb3Column:240 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Todo), mappingColumn=title, insertable=true, updatable=true, unique=false}
+2015-06-26 13:34:16 DEBUG PropertyBinder:185 - MetadataSourceProcessor property title with lazy=false
+2015-06-26 13:34:16 DEBUG AbstractPropertyHolder:106 - Attempting to locate auto-apply AttributeConverter for property [todo.todoManager.model.Todo:title]
+2015-06-26 13:34:16 DEBUG SimpleValueBinder:388 - building SimpleValue for title
+2015-06-26 13:34:16 DEBUG PropertyBinder:271 - Building property title
+2015-06-26 13:34:16 DEBUG SimpleValueBinder:428 - Starting fillSimpleValue for id
+2015-06-26 13:34:16 DEBUG SimpleValueBinder:428 - Starting fillSimpleValue for text
+2015-06-26 13:34:16 DEBUG SimpleValueBinder:428 - Starting fillSimpleValue for title
+2015-06-26 13:34:16 DEBUG Configuration:1484 - Processing fk mappings (*ToOne and JoinedSubclass)
+2015-06-26 13:34:16 DEBUG Configuration:1689 - Processing extends queue
+2015-06-26 13:34:16 DEBUG Configuration:1747 - Processing extends queue
+2015-06-26 13:34:16 DEBUG Configuration:1692 - Processing collection mappings
+2015-06-26 13:34:16 DEBUG Configuration:1702 - Processing native query and ResultSetMapping mappings
+2015-06-26 13:34:16 DEBUG Configuration:1710 - Processing association property references
+2015-06-26 13:34:16 DEBUG Configuration:1732 - Creating tables&apos; unique integer identifiers
+2015-06-26 13:34:16 DEBUG Configuration:1733 - Processing foreign key constraints
+2015-06-26 13:34:16 DEBUG JtaPlatformInitiator:59 - No JtaPlatform was specified, checking resolver
+2015-06-26 13:34:16 DEBUG JtaPlatformResolverInitiator:50 - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+2015-06-26 13:34:16 DEBUG StandardJtaPlatformResolver:118 - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2015-06-26 13:34:16 DEBUG SettingsFactory:122 - Automatic flush during beforeCompletion(): disabled
+2015-06-26 13:34:16 DEBUG SettingsFactory:128 - Automatic session close at end of transaction: disabled
+2015-06-26 13:34:16 DEBUG SettingsFactory:139 - JDBC batch size: 15
+2015-06-26 13:34:16 DEBUG SettingsFactory:145 - JDBC batch updates for versioned data: disabled
+2015-06-26 13:34:16 DEBUG SettingsFactory:155 - Scrollable result sets: enabled
+2015-06-26 13:34:16 DEBUG SettingsFactory:161 - Wrap result sets: disabled
+2015-06-26 13:34:16 DEBUG SettingsFactory:167 - JDBC3 getGeneratedKeys(): enabled
+2015-06-26 13:34:16 DEBUG SettingsFactory:179 - multi-tenancy strategy : NONE
+2015-06-26 13:34:16 DEBUG SettingsFactory:185 - Connection release mode: auto
+2015-06-26 13:34:16 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2015-06-26 13:34:16 DEBUG SettingsFactory:207 - Using BatchFetchStyle : LEGACY
+2015-06-26 13:34:16 DEBUG SettingsFactory:226 - Maximum outer join fetch depth: 2
+2015-06-26 13:34:16 DEBUG SettingsFactory:232 - Default batch fetch size: 1
+2015-06-26 13:34:16 DEBUG SettingsFactory:238 - Generate SQL with comments: disabled
+2015-06-26 13:34:16 DEBUG SettingsFactory:244 - Order SQL updates by primary key: disabled
+2015-06-26 13:34:16 DEBUG SettingsFactory:250 - Order SQL inserts for batching: disabled
+2015-06-26 13:34:16 DEBUG SettingsFactory:258 - Default null ordering: none
+2015-06-26 13:34:16 DEBUG SettingsFactory:501 - Query translator: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory
+2015-06-26 13:34:16 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2015-06-26 13:34:16 DEBUG SettingsFactory:268 - Query language substitutions: {}
+2015-06-26 13:34:16 DEBUG SettingsFactory:274 - JPA-QL strict compliance: disabled
+2015-06-26 13:34:16 DEBUG SettingsFactory:282 - Second-level cache: enabled
+2015-06-26 13:34:16 DEBUG SettingsFactory:288 - Query cache: disabled
+2015-06-26 13:34:16 DEBUG RegionFactoryInitiator:105 - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2015-06-26 13:34:16 DEBUG SettingsFactory:301 - Optimize cache for minimal puts: disabled
+2015-06-26 13:34:16 DEBUG SettingsFactory:316 - Structured second-level cache entries: disabled
+2015-06-26 13:34:16 DEBUG SettingsFactory:326 - Second-level cache direct-reference entries: disabled
+2015-06-26 13:34:16 DEBUG SettingsFactory:332 - Automatic eviction of collection cache: disabled
+2015-06-26 13:34:16 DEBUG SettingsFactory:340 - Statistics: disabled
+2015-06-26 13:34:16 DEBUG SettingsFactory:346 - Deleted entity synthetic identifier rollback: disabled
+2015-06-26 13:34:16 DEBUG SettingsFactory:373 - Default entity-mode: pojo
+2015-06-26 13:34:16 DEBUG SettingsFactory:379 - Named query checking : enabled
+2015-06-26 13:34:16 DEBUG SettingsFactory:385 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2015-06-26 13:34:16 DEBUG SettingsFactory:403 - Allow initialization of lazy state outside session : : disabled
+2015-06-26 13:34:16 DEBUG SettingsFactory:413 - JTA Track by Thread: enabled
+2015-06-26 13:34:16 DEBUG SessionFactoryImpl:229 - Building session factory
+2015-06-26 13:34:16 DEBUG SessionFactoryImpl:285 - Session factory constructed with filter configurations : {}
+2015-06-26 13:34:16 DEBUG SessionFactoryImpl:286 - Instantiating session factory with properties: {java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=/usr/lib/jvm/java-8-oracle/jre/lib/amd64, java.vm.version=25.45-b02, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=:, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.country=IN, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=unknown, java.vm.specification.name=Java Virtual Machine Specification, user.dir=/home/webonise/Documents/workspace-sts-3.6.4.RELEASE/TodoManager, java.runtime.version=1.8.0_45-b14, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, basedir=/home/webonise/Documents/workspace-sts-3.6.4.RELEASE/TodoManager, hibernate.current_session_context_class=org.springframework.orm.hibernate4.SpringSessionContext, java.endorsed.dirs=/usr/lib/jvm/java-8-oracle/jre/lib/endorsed, os.arch=amd64, surefire.real.class.path=/home/webonise/Documents/workspace-sts-3.6.4.RELEASE/TodoManager/target/surefire/surefirebooter8937050240572729526.jar, java.io.tmpdir=/tmp, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, os.name=Linux, sun.jnu.encoding=UTF-8, java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib, hibernate.connection.datasource=org.apache.commons.dbcp.BasicDataSource@73302995, surefire.test.class.path=/home/webonise/Documents/workspace-sts-3.6.4.RELEASE/TodoManager/target/test-classes:/home/webonise/Documents/workspace-sts-3.6.4.RELEASE/TodoManager/target/classes:/home/webonise/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/webonise/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/webonise/.m2/repository/org/hibernate/hibernate-core/4.3.10.Final/hibernate-core-4.3.10.Final.jar:/home/webonise/.m2/repository/org/jboss/logging/jboss-logging/3.1.3.GA/jboss-logging-3.1.3.GA.jar:/home/webonise/.m2/repository/org/jboss/logging/jboss-logging-annotations/1.2.0.Beta1/jboss-logging-annotations-1.2.0.Beta1.jar:/home/webonise/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.0.Final/jboss-transaction-api_1.2_spec-1.0.0.Final.jar:/home/webonise/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/home/webonise/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar:/home/webonise/.m2/repository/org/hibernate/common/hibernate-commons-annotations/4.0.5.Final/hibernate-commons-annotations-4.0.5.Final.jar:/home/webonise/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar:/home/webonise/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar:/home/webonise/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/webonise/.m2/repository/org/jboss/jandex/1.1.0.Final/jandex-1.1.0.Final.jar:/home/webonise/.m2/repository/org/hibernate/hibernate-entitymanager/4.3.10.Final/hibernate-entitymanager-4.3.10.Final.jar:/home/webonise/.m2/repository/org/springframework/spring-core/4.1.6.RELEASE/spring-core-4.1.6.RELEASE.jar:/home/webonise/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/webonise/.m2/repository/org/springframework/spring-orm/4.1.6.RELEASE/spring-orm-4.1.6.RELEASE.jar:/home/webonise/.m2/repository/org/springframework/spring-beans/4.1.6.RELEASE/spring-beans-4.1.6.RELEASE.jar:/home/webonise/.m2/repository/org/springframework/spring-jdbc/4.1.6.RELEASE/spring-jdbc-4.1.6.RELEASE.jar:/home/webonise/.m2/repository/org/springframework/spring-tx/4.1.6.RELEASE/spring-tx-4.1.6.RELEASE.jar:/home/webonise/.m2/repository/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4.jar:/home/webonise/.m2/repository/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar:/home/webonise/.m2/repository/org/springframework/spring-context/4.1.6.RELEASE/spring-context-4.1.6.RELEASE.jar:/home/webonise/.m2/repository/org/springframework/spring-aop/4.1.6.RELEASE/spring-aop-4.1.6.RELEASE.jar:/home/webonise/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/home/webonise/.m2/repository/org/springframework/spring-expression/4.1.6.RELEASE/spring-expression-4.1.6.RELEASE.jar:/home/webonise/.m2/repository/mysql/mysql-connector-java/5.1.35/mysql-connector-java-5.1.35.jar:/home/webonise/.m2/repository/org/jasypt/jasypt/1.9.2/jasypt-1.9.2.jar:/home/webonise/.m2/repository/org/jasypt/jasypt-hibernate4/1.9.2/jasypt-hibernate4-1.9.2.jar:/home/webonise/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/home/webonise/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/home/webonise/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.52/bcprov-jdk15on-1.52.jar:, java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=3.13.0-32-generic, user.home=/home/webonise, user.timezone=Asia/Kolkata, java.awt.printerjob=sun.print.PSPrinterJob, java.specification.version=1.8, file.encoding=UTF-8, user.name=webonise, java.class.path=/home/webonise/Documents/workspace-sts-3.6.4.RELEASE/TodoManager/target/test-classes:/home/webonise/Documents/workspace-sts-3.6.4.RELEASE/TodoManager/target/classes:/home/webonise/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/webonise/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/webonise/.m2/repository/org/hibernate/hibernate-core/4.3.10.Final/hibernate-core-4.3.10.Final.jar:/home/webonise/.m2/repository/org/jboss/logging/jboss-logging/3.1.3.GA/jboss-logging-3.1.3.GA.jar:/home/webonise/.m2/repository/org/jboss/logging/jboss-logging-annotations/1.2.0.Beta1/jboss-logging-annotations-1.2.0.Beta1.jar:/home/webonise/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.0.Final/jboss-transaction-api_1.2_spec-1.0.0.Final.jar:/home/webonise/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/home/webonise/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar:/home/webonise/.m2/repository/org/hibernate/common/hibernate-commons-annotations/4.0.5.Final/hibernate-commons-annotations-4.0.5.Final.jar:/home/webonise/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar:/home/webonise/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar:/home/webonise/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/webonise/.m2/repository/org/jboss/jandex/1.1.0.Final/jandex-1.1.0.Final.jar:/home/webonise/.m2/repository/org/hibernate/hibernate-entitymanager/4.3.10.Final/hibernate-entitymanager-4.3.10.Final.jar:/home/webonise/.m2/repository/org/springframework/spring-core/4.1.6.RELEASE/spring-core-4.1.6.RELEASE.jar:/home/webonise/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/webonise/.m2/repository/org/springframework/spring-orm/4.1.6.RELEASE/spring-orm-4.1.6.RELEASE.jar:/home/webonise/.m2/repository/org/springframework/spring-beans/4.1.6.RELEASE/spring-beans-4.1.6.RELEASE.jar:/home/webonise/.m2/repository/org/springframework/spring-jdbc/4.1.6.RELEASE/spring-jdbc-4.1.6.RELEASE.jar:/home/webonise/.m2/repository/org/springframework/spring-tx/4.1.6.RELEASE/spring-tx-4.1.6.RELEASE.jar:/home/webonise/.m2/repository/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4.jar:/home/webonise/.m2/repository/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar:/home/webonise/.m2/repository/org/springframework/spring-context/4.1.6.RELEASE/spring-context-4.1.6.RELEASE.jar:/home/webonise/.m2/repository/org/springframework/spring-aop/4.1.6.RELEASE/spring-aop-4.1.6.RELEASE.jar:/home/webonise/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/home/webonise/.m2/repository/org/springframework/spring-expression/4.1.6.RELEASE/spring-expression-4.1.6.RELEASE.jar:/home/webonise/.m2/repository/mysql/mysql-connector-java/5.1.35/mysql-connector-java-5.1.35.jar:/home/webonise/.m2/repository/org/jasypt/jasypt/1.9.2/jasypt-1.9.2.jar:/home/webonise/.m2/repository/org/jasypt/jasypt-hibernate4/1.9.2/jasypt-hibernate4-1.9.2.jar:/home/webonise/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/home/webonise/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/home/webonise/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.52/bcprov-jdk15on-1.52.jar:, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.classLoader.application=sun.misc.Launcher$AppClassLoader@6bc7c054, java.vm.specification.version=1.8, sun.arch.data.model=64, java.home=/usr/lib/jvm/java-8-oracle/jre, sun.java.command=/home/webonise/Documents/workspace-sts-3.6.4.RELEASE/TodoManager/target/surefire/surefirebooter8937050240572729526.jar /home/webonise/Documents/workspace-sts-3.6.4.RELEASE/TodoManager/target/surefire/surefire1075041472803872764tmp /home/webonise/Documents/workspace-sts-3.6.4.RELEASE/TodoManager/target/surefire/surefire_04858434820054730467tmp, hibernate.dialect=org.hibernate.dialect.MySQLDialect, java.specification.vendor=Oracle Corporation, user.language=en, awt.toolkit=sun.awt.X11.XToolkit, java.vm.info=mixed mode, java.version=1.8.0_45, java.ext.dirs=/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext, sun.boot.class.path=/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes, java.vendor=Oracle Corporation, localRepository=/home/webonise/.m2/repository, file.separator=/, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, hibernate.hbm2ddl.auto=update, sun.cpu.endian=little, sun.io.unicode.encoding=UnicodeLittle, sun.desktop=gnome, sun.cpu.isalist=}
+2015-06-26 13:34:16 DEBUG JaccIntegrator:90 - Skipping JACC integration as it was not enabled
+2015-06-26 13:34:16 DEBUG DefaultIdentifierGeneratorFactory:107 - Setting dialect [org.hibernate.dialect.MySQLDialect]
+2015-06-26 13:34:16 DEBUG AbstractEntityPersister:3676 - Static SQL for entity: todo.todoManager.model.Todo
+2015-06-26 13:34:16 DEBUG AbstractEntityPersister:3681 -  Version select: select id from Todo where id =?
+2015-06-26 13:34:16 DEBUG AbstractEntityPersister:3684 -  Snapshot select: select todo_.id, todo_.text as text2_0_, todo_.title as title3_0_ from Todo todo_ where todo_.id=?
+2015-06-26 13:34:16 DEBUG AbstractEntityPersister:3687 -  Insert 0: insert into Todo (text, title, id) values (?, ?, ?)
+2015-06-26 13:34:16 DEBUG AbstractEntityPersister:3688 -  Update 0: update Todo set text=?, title=? where id=?
+2015-06-26 13:34:16 DEBUG AbstractEntityPersister:3689 -  Delete 0: delete from Todo where id=?
+2015-06-26 13:34:16 DEBUG AbstractEntityPersister:3692 -  Identity insert: insert into Todo (text, title) values (?, ?)
+2015-06-26 13:34:16 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@47f4e407]
+2015-06-26 13:34:16 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : text
+2015-06-26 13:34:16 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : title
+2015-06-26 13:34:16 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+2015-06-26 13:34:16 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace &lt;gen:0&gt;
+2015-06-26 13:34:16 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=todo.todoManager.model.Todo)
+    - Returns
+       - EntityReturnImpl(entity=todo.todoManager.model.Todo, querySpaceUid=&lt;gen:0&gt;, path=todo.todoManager.model.Todo)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=todo.todoManager.model.Todo)
+          - SQL table alias mapping - todo0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2015-06-26 13:34:16 DEBUG EntityLoader:146 - Static select for entity todo.todoManager.model.Todo [NONE]: select todo0_.id as id1_0_0_, todo0_.text as text2_0_0_, todo0_.title as title3_0_0_ from Todo todo0_ where todo0_.id=?
+2015-06-26 13:34:16 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3b0c9195]
+2015-06-26 13:34:16 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : text
+2015-06-26 13:34:16 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : title
+2015-06-26 13:34:16 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+2015-06-26 13:34:16 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace &lt;gen:0&gt;
+2015-06-26 13:34:16 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=todo.todoManager.model.Todo)
+    - Returns
+       - EntityReturnImpl(entity=todo.todoManager.model.Todo, querySpaceUid=&lt;gen:0&gt;, path=todo.todoManager.model.Todo)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=todo.todoManager.model.Todo)
+          - SQL table alias mapping - todo0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2015-06-26 13:34:16 DEBUG EntityLoader:146 - Static select for entity todo.todoManager.model.Todo [READ]: select todo0_.id as id1_0_0_, todo0_.text as text2_0_0_, todo0_.title as title3_0_0_ from Todo todo0_ where todo0_.id=?
+2015-06-26 13:34:16 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2c7b5824]
+2015-06-26 13:34:16 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : text
+2015-06-26 13:34:16 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : title
+2015-06-26 13:34:16 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+2015-06-26 13:34:16 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace &lt;gen:0&gt;
+2015-06-26 13:34:16 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=todo.todoManager.model.Todo)
+    - Returns
+       - EntityReturnImpl(entity=todo.todoManager.model.Todo, querySpaceUid=&lt;gen:0&gt;, path=todo.todoManager.model.Todo)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=todo.todoManager.model.Todo)
+          - SQL table alias mapping - todo0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2015-06-26 13:34:16 DEBUG EntityLoader:146 - Static select for entity todo.todoManager.model.Todo [UPGRADE]: select todo0_.id as id1_0_0_, todo0_.text as text2_0_0_, todo0_.title as title3_0_0_ from Todo todo0_ where todo0_.id=? for update
+2015-06-26 13:34:16 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5cdd09b1]
+2015-06-26 13:34:16 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : text
+2015-06-26 13:34:16 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : title
+2015-06-26 13:34:16 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+2015-06-26 13:34:16 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace &lt;gen:0&gt;
+2015-06-26 13:34:16 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=todo.todoManager.model.Todo)
+    - Returns
+       - EntityReturnImpl(entity=todo.todoManager.model.Todo, querySpaceUid=&lt;gen:0&gt;, path=todo.todoManager.model.Todo)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=todo.todoManager.model.Todo)
+          - SQL table alias mapping - todo0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2015-06-26 13:34:16 DEBUG EntityLoader:146 - Static select for entity todo.todoManager.model.Todo [UPGRADE_NOWAIT]: select todo0_.id as id1_0_0_, todo0_.text as text2_0_0_, todo0_.title as title3_0_0_ from Todo todo0_ where todo0_.id=? for update
+2015-06-26 13:34:16 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7e8dcdaa]
+2015-06-26 13:34:16 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : text
+2015-06-26 13:34:16 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : title
+2015-06-26 13:34:16 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+2015-06-26 13:34:16 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace &lt;gen:0&gt;
+2015-06-26 13:34:16 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=todo.todoManager.model.Todo)
+    - Returns
+       - EntityReturnImpl(entity=todo.todoManager.model.Todo, querySpaceUid=&lt;gen:0&gt;, path=todo.todoManager.model.Todo)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=todo.todoManager.model.Todo)
+          - SQL table alias mapping - todo0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2015-06-26 13:34:16 DEBUG EntityLoader:146 - Static select for entity todo.todoManager.model.Todo [UPGRADE_SKIPLOCKED]: select todo0_.id as id1_0_0_, todo0_.text as text2_0_0_, todo0_.title as title3_0_0_ from Todo todo0_ where todo0_.id=? for update
+2015-06-26 13:34:16 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5cbe877d]
+2015-06-26 13:34:16 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : text
+2015-06-26 13:34:16 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : title
+2015-06-26 13:34:16 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+2015-06-26 13:34:16 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace &lt;gen:0&gt;
+2015-06-26 13:34:16 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=todo.todoManager.model.Todo)
+    - Returns
+       - EntityReturnImpl(entity=todo.todoManager.model.Todo, querySpaceUid=&lt;gen:0&gt;, path=todo.todoManager.model.Todo)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=todo.todoManager.model.Todo)
+          - SQL table alias mapping - todo0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2015-06-26 13:34:16 DEBUG EntityLoader:146 - Static select for entity todo.todoManager.model.Todo [FORCE]: select todo0_.id as id1_0_0_, todo0_.text as text2_0_0_, todo0_.title as title3_0_0_ from Todo todo0_ where todo0_.id=? for update
+2015-06-26 13:34:16 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4cf8b2dc]
+2015-06-26 13:34:16 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : text
+2015-06-26 13:34:16 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : title
+2015-06-26 13:34:16 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+2015-06-26 13:34:16 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace &lt;gen:0&gt;
+2015-06-26 13:34:16 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=todo.todoManager.model.Todo)
+    - Returns
+       - EntityReturnImpl(entity=todo.todoManager.model.Todo, querySpaceUid=&lt;gen:0&gt;, path=todo.todoManager.model.Todo)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=todo.todoManager.model.Todo)
+          - SQL table alias mapping - todo0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2015-06-26 13:34:16 DEBUG EntityLoader:146 - Static select for entity todo.todoManager.model.Todo [PESSIMISTIC_READ]: select todo0_.id as id1_0_0_, todo0_.text as text2_0_0_, todo0_.title as title3_0_0_ from Todo todo0_ where todo0_.id=? lock in share mode
+2015-06-26 13:34:16 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5829e4f4]
+2015-06-26 13:34:16 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : text
+2015-06-26 13:34:16 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : title
+2015-06-26 13:34:16 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+2015-06-26 13:34:16 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace &lt;gen:0&gt;
+2015-06-26 13:34:16 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=todo.todoManager.model.Todo)
+    - Returns
+       - EntityReturnImpl(entity=todo.todoManager.model.Todo, querySpaceUid=&lt;gen:0&gt;, path=todo.todoManager.model.Todo)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=todo.todoManager.model.Todo)
+          - SQL table alias mapping - todo0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2015-06-26 13:34:16 DEBUG EntityLoader:146 - Static select for entity todo.todoManager.model.Todo [PESSIMISTIC_WRITE]: select todo0_.id as id1_0_0_, todo0_.text as text2_0_0_, todo0_.title as title3_0_0_ from Todo todo0_ where todo0_.id=? for update
+2015-06-26 13:34:16 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4bff64c2]
+2015-06-26 13:34:16 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : text
+2015-06-26 13:34:16 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : title
+2015-06-26 13:34:16 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+2015-06-26 13:34:16 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace &lt;gen:0&gt;
+2015-06-26 13:34:16 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=todo.todoManager.model.Todo)
+    - Returns
+       - EntityReturnImpl(entity=todo.todoManager.model.Todo, querySpaceUid=&lt;gen:0&gt;, path=todo.todoManager.model.Todo)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=todo.todoManager.model.Todo)
+          - SQL table alias mapping - todo0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2015-06-26 13:34:16 DEBUG EntityLoader:146 - Static select for entity todo.todoManager.model.Todo [PESSIMISTIC_FORCE_INCREMENT]: select todo0_.id as id1_0_0_, todo0_.text as text2_0_0_, todo0_.title as title3_0_0_ from Todo todo0_ where todo0_.id=? for update
+2015-06-26 13:34:16 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@c35172e]
+2015-06-26 13:34:16 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : text
+2015-06-26 13:34:16 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : title
+2015-06-26 13:34:16 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+2015-06-26 13:34:16 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace &lt;gen:0&gt;
+2015-06-26 13:34:16 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=todo.todoManager.model.Todo)
+    - Returns
+       - EntityReturnImpl(entity=todo.todoManager.model.Todo, querySpaceUid=&lt;gen:0&gt;, path=todo.todoManager.model.Todo)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=todo.todoManager.model.Todo)
+          - SQL table alias mapping - todo0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2015-06-26 13:34:16 DEBUG EntityLoader:146 - Static select for entity todo.todoManager.model.Todo [OPTIMISTIC]: select todo0_.id as id1_0_0_, todo0_.text as text2_0_0_, todo0_.title as title3_0_0_ from Todo todo0_ where todo0_.id=?
+2015-06-26 13:34:16 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3cc41abc]
+2015-06-26 13:34:16 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : text
+2015-06-26 13:34:16 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : title
+2015-06-26 13:34:16 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+2015-06-26 13:34:16 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace &lt;gen:0&gt;
+2015-06-26 13:34:16 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=todo.todoManager.model.Todo)
+    - Returns
+       - EntityReturnImpl(entity=todo.todoManager.model.Todo, querySpaceUid=&lt;gen:0&gt;, path=todo.todoManager.model.Todo)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=todo.todoManager.model.Todo)
+          - SQL table alias mapping - todo0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2015-06-26 13:34:16 DEBUG EntityLoader:146 - Static select for entity todo.todoManager.model.Todo [OPTIMISTIC_FORCE_INCREMENT]: select todo0_.id as id1_0_0_, todo0_.text as text2_0_0_, todo0_.title as title3_0_0_ from Todo todo0_ where todo0_.id=?
+2015-06-26 13:34:16 DEBUG Loader:56 - Static select for action ACTION_MERGE on entity todo.todoManager.model.Todo: select todo0_.id as id1_0_0_, todo0_.text as text2_0_0_, todo0_.title as title3_0_0_ from Todo todo0_ where todo0_.id=?
+2015-06-26 13:34:16 DEBUG Loader:56 - Static select for action ACTION_REFRESH on entity todo.todoManager.model.Todo: select todo0_.id as id1_0_0_, todo0_.text as text2_0_0_, todo0_.title as title3_0_0_ from Todo todo0_ where todo0_.id=?
+2015-06-26 13:34:16 DEBUG SessionFactoryRegistry:67 - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@781f10f2
+2015-06-26 13:34:16 DEBUG SessionFactoryRegistry:89 - Registering SessionFactory: a48a2477-44e0-42f7-89ba-b995b350d2bb (&lt;unnamed&gt;)
+2015-06-26 13:34:16 DEBUG SessionFactoryRegistry:96 - Not binding SessionFactory to JNDI, no JNDI name configured
+2015-06-26 13:34:16 DEBUG SessionFactoryImpl:505 - Instantiated session factory
+2015-06-26 13:34:16 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+2015-06-26 13:34:16 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
+2015-06-26 13:34:16 INFO  SchemaUpdate:230 - HHH000396: Updating schema
+2015-06-26 13:34:16 DEBUG Configuration:3805 - Processing hbm.xml files
+2015-06-26 13:34:16 DEBUG Configuration:3835 - Process annotated classes
+2015-06-26 13:34:16 DEBUG Configuration:1484 - Processing fk mappings (*ToOne and JoinedSubclass)
+2015-06-26 13:34:16 DEBUG Configuration:1689 - Processing extends queue
+2015-06-26 13:34:16 DEBUG Configuration:1747 - Processing extends queue
+2015-06-26 13:34:16 DEBUG Configuration:1692 - Processing collection mappings
+2015-06-26 13:34:16 DEBUG Configuration:1702 - Processing native query and ResultSetMapping mappings
+2015-06-26 13:34:16 DEBUG Configuration:1710 - Processing association property references
+2015-06-26 13:34:16 DEBUG Configuration:1732 - Creating tables&apos; unique integer identifiers
+2015-06-26 13:34:16 DEBUG Configuration:1733 - Processing foreign key constraints
+2015-06-26 13:34:16 INFO  TableMetadata:65 - HHH000261: Table found: todo.Todo
+2015-06-26 13:34:16 INFO  TableMetadata:66 - HHH000037: Columns: [id, text, title]
+2015-06-26 13:34:16 INFO  TableMetadata:68 - HHH000108: Foreign keys: []
+2015-06-26 13:34:16 INFO  TableMetadata:69 - HHH000126: Indexes: [primary]
+2015-06-26 13:34:16 DEBUG DefaultIdentifierGeneratorFactory:107 - Setting dialect [org.hibernate.dialect.MySQLDialect]
+2015-06-26 13:34:16 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
+2015-06-26 13:34:16 DEBUG NamedQueryRepository:155 - Checking 0 named HQL queries
+2015-06-26 13:34:16 DEBUG NamedQueryRepository:171 - Checking 0 named SQL queries
+2015-06-26 13:34:16 DEBUG StatisticsInitiator:110 - Statistics initialized [enabled=false]
+2015-06-26 13:34:16 DEBUG DefaultListableBeanFactory:478 - Finished creating instance of bean &apos;hibernate4AnnotatedSessionFactory&apos;
+2015-06-26 13:34:16 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean &apos;hibernateUtil&apos;
+2015-06-26 13:34:16 DEBUG DefaultListableBeanFactory:450 - Creating instance of bean &apos;hibernateUtil&apos;
+2015-06-26 13:34:16 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean &apos;hibernateUtil&apos; to allow for resolving potential circular references
+2015-06-26 13:34:16 DEBUG DefaultListableBeanFactory:248 - Returning cached instance of singleton bean &apos;hibernate4AnnotatedSessionFactory&apos;
+2015-06-26 13:34:16 DEBUG DefaultListableBeanFactory:478 - Finished creating instance of bean &apos;hibernateUtil&apos;
+2015-06-26 13:34:16 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean &apos;bc&apos;
+2015-06-26 13:34:16 DEBUG DefaultListableBeanFactory:450 - Creating instance of bean &apos;bc&apos;
+2015-06-26 13:34:17 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean &apos;bc&apos; to allow for resolving potential circular references
+2015-06-26 13:34:17 DEBUG DefaultListableBeanFactory:478 - Finished creating instance of bean &apos;bc&apos;
+2015-06-26 13:34:17 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean &apos;mySaltGenerator&apos;
+2015-06-26 13:34:17 DEBUG DefaultListableBeanFactory:450 - Creating instance of bean &apos;mySaltGenerator&apos;
+2015-06-26 13:34:17 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean &apos;mySaltGenerator&apos; to allow for resolving potential circular references
+2015-06-26 13:34:17 DEBUG DefaultListableBeanFactory:478 - Finished creating instance of bean &apos;mySaltGenerator&apos;
+2015-06-26 13:34:17 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean &apos;hibernateStringEncryptor&apos;
+2015-06-26 13:34:17 DEBUG DefaultListableBeanFactory:450 - Creating instance of bean &apos;hibernateStringEncryptor&apos;
+2015-06-26 13:34:17 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean &apos;hibernateStringEncryptor&apos; to allow for resolving potential circular references
+2015-06-26 13:34:17 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean &apos;environmentVariablesConfiguration&apos;
+2015-06-26 13:34:17 DEBUG DefaultListableBeanFactory:450 - Creating instance of bean &apos;environmentVariablesConfiguration&apos;
+2015-06-26 13:34:17 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean &apos;environmentVariablesConfiguration&apos; to allow for resolving potential circular references
+2015-06-26 13:34:17 DEBUG DefaultListableBeanFactory:248 - Returning cached instance of singleton bean &apos;bc&apos;
+2015-06-26 13:34:17 DEBUG TypeConverterDelegate:585 - Custom Map type [org.bouncycastle.jce.provider.BouncyCastleProvider] does not allow for creating a copy - injecting original Map as-is
+2015-06-26 13:34:17 DEBUG TypeConverterDelegate:585 - Custom Map type [org.bouncycastle.jce.provider.BouncyCastleProvider] does not allow for creating a copy - injecting original Map as-is
+2015-06-26 13:34:17 DEBUG DefaultListableBeanFactory:478 - Finished creating instance of bean &apos;environmentVariablesConfiguration&apos;
+2015-06-26 13:34:17 DEBUG DefaultListableBeanFactory:478 - Finished creating instance of bean &apos;hibernateStringEncryptor&apos;
+2015-06-26 13:34:17 DEBUG DefaultListableBeanFactory:248 - Returning cached instance of singleton bean &apos;environmentVariablesConfiguration&apos;
+2015-06-26 13:34:17 DEBUG ClassPathXmlApplicationContext:697 - Unable to locate LifecycleProcessor with name &apos;lifecycleProcessor&apos;: using default [org.springframework.context.support.DefaultLifecycleProcessor@2dbf4cbd]
+2015-06-26 13:34:17 DEBUG DefaultListableBeanFactory:248 - Returning cached instance of singleton bean &apos;lifecycleProcessor&apos;
+2015-06-26 13:34:17 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;spring.liveBeansView.mbeanDomain&apos; in [systemProperties]
+2015-06-26 13:34:17 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;spring.liveBeansView.mbeanDomain&apos; in [systemEnvironment]
+2015-06-26 13:34:17 DEBUG PropertySourcesPropertyResolver:103 - Could not find key &apos;spring.liveBeansView.mbeanDomain&apos; in any property source. Returning [null]
+2015-06-26 13:34:17 DEBUG DefaultListableBeanFactory:248 - Returning cached instance of singleton bean &apos;hibernateUtil&apos;
+2015-06-26 13:34:17 DEBUG DefaultListableBeanFactory:248 - Returning cached instance of singleton bean &apos;dataSourceForJDBC&apos;
+2015-06-26 13:34:17 DEBUG AbstractTransactionImpl:160 - begin
+2015-06-26 13:34:17 DEBUG LogicalConnectionImpl:226 - Obtaining JDBC connection
+2015-06-26 13:34:17 DEBUG LogicalConnectionImpl:232 - Obtained JDBC connection
+2015-06-26 13:34:17 DEBUG JdbcTransaction:69 - initial autocommit status: true
+2015-06-26 13:34:17 DEBUG JdbcTransaction:71 - disabling autocommit
+2015-06-26 13:34:17 DEBUG ActionQueue:196 - Executing identity-insert immediately
+2015-06-26 13:34:17 DEBUG SQL:109 - insert into Todo (text, title) values (?, ?)
+Hibernate: insert into Todo (text, title) values (?, ?)
+2015-06-26 13:34:17 DEBUG IdentifierGeneratorHelper:94 - Natively generated identity: 67
+2015-06-26 13:34:17 DEBUG AbstractTransactionImpl:175 - committing
+2015-06-26 13:34:17 DEBUG AbstractFlushingEventListener:149 - Processing flush-time cascades
+2015-06-26 13:34:17 DEBUG AbstractFlushingEventListener:189 - Dirty checking collections
+2015-06-26 13:34:17 DEBUG AbstractFlushingEventListener:123 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+2015-06-26 13:34:17 DEBUG AbstractFlushingEventListener:130 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2015-06-26 13:34:17 DEBUG EntityPrinter:114 - Listing entities:
+2015-06-26 13:34:17 DEBUG EntityPrinter:121 - todo.todoManager.model.Todo{id=67, text=text1, title=title1}
+2015-06-26 13:34:17 DEBUG JdbcTransaction:113 - committed JDBC Connection
+2015-06-26 13:34:17 DEBUG JdbcTransaction:126 - re-enabling autocommit
+2015-06-26 13:34:17 DEBUG LogicalConnectionImpl:246 - Releasing JDBC connection
+2015-06-26 13:34:17 DEBUG LogicalConnectionImpl:264 - Released JDBC connection
+2015-06-26 13:34:17 DEBUG DataSourceUtils:110 - Fetching JDBC Connection from DataSource
+2015-06-26 13:34:17 DEBUG DriverManagerDataSource:142 - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/todo]
+2015-06-26 13:34:17 DEBUG TodoDAO:66 - Encrypted string is PbK0WvzYRpWvr4kvThgBAg==
+2015-06-26 13:34:17 INFO  App:46 - *****************javax.crypto.spec.SecretKeySpec@165fb
+2015-06-26 13:34:18 INFO  App:99 - *****************javax.crypto.spec.SecretKeySpec@165fb
+</system-out>
+    <system-err>javax.crypto.BadPaddingException: pad block corrupted
+	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher$BufferedGenericBlockCipher.doFinal(Unknown Source)
+	at org.bouncycastle.jcajce.provider.symmetric.util.BaseBlockCipher.engineDoFinal(Unknown Source)
+	at javax.crypto.Cipher.doFinal(Cipher.java:2165)
+	at todo.todoManager.cryptography.StringEncryptor.getDecryptedString(StringEncryptor.java:106)
 	at todo.todoManager.dao.TodoDAO.getTodoForTitle(TodoDAO.java:70)
 	at todo.TodoManager.TodoTest.insertedDataShouldSameWithFecthedData(TodoTest.java:20)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -97,570 +698,6 @@
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</error>
-    <system-out>2015-06-26 13:22:33 DEBUG StandardEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
-2015-06-26 13:22:33 DEBUG StandardEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
-2015-06-26 13:22:33 DEBUG StandardEnvironment:126 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
-2015-06-26 13:22:33 INFO  ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@49e4cb85: startup date [Fri Jun 26 13:22:33 IST 2015]; root of context hierarchy
-2015-06-26 13:22:33 DEBUG StandardEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
-2015-06-26 13:22:33 DEBUG StandardEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
-2015-06-26 13:22:33 DEBUG StandardEnvironment:126 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
-2015-06-26 13:22:33 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring.xml]
-2015-06-26 13:22:33 DEBUG DefaultDocumentLoader:73 - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
-2015-06-26 13:22:33 DEBUG PluggableSchemaResolver:141 - Loading schema mappings from [META-INF/spring.schemas]
-2015-06-26 13:22:33 DEBUG PluggableSchemaResolver:147 - Loaded schema mappings: {http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop-4.1.xsd=org/springframework/aop/config/spring-aop-4.1.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.1.xsd=org/springframework/jdbc/config/spring-jdbc-4.1.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-4.1.xsd, http://www.springframework.org/schema/lang/spring-lang-4.1.xsd=org/springframework/scripting/config/spring-lang-4.1.xsd, http://www.springframework.org/schema/context/spring-context-4.0.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-4.1.xsd=org/springframework/beans/factory/xml/spring-tool-4.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-4.1.xsd=org/springframework/ejb/config/spring-jee-4.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-4.1.xsd, http://www.springframework.org/schema/cache/spring-cache-4.1.xsd=org/springframework/cache/config/spring-cache-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-4.0.xsd=org/springframework/aop/config/spring-aop-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd=org/springframework/jdbc/config/spring-jdbc-4.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-4.0.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.1.xsd=org/springframework/beans/factory/xml/spring-beans-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-4.0.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-3.2.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-4.0.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/task/spring-task-4.1.xsd=org/springframework/scheduling/config/spring-task-4.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-4.1.xsd=org/springframework/transaction/config/spring-tx-4.1.xsd, http://www.springframework.org/schema/cache/spring-cache-4.0.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.0.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-4.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/task/spring-task-4.0.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-4.0.xsd=org/springframework/transaction/config/spring-tx-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/util/spring-util-4.1.xsd=org/springframework/beans/factory/xml/spring-util-4.1.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/util/spring-util-4.0.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-4.1.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-4.1.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-4.1.xsd, http://www.springframework.org/schema/context/spring-context-4.1.xsd=org/springframework/context/config/spring-context-4.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-4.1.xsd}
-2015-06-26 13:22:33 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-4.1.xsd
-2015-06-26 13:22:34 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/context/spring-context.xsd] in classpath: org/springframework/context/config/spring-context-4.1.xsd
-2015-06-26 13:22:34 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/tool/spring-tool-4.1.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-4.1.xsd
-2015-06-26 13:22:34 DEBUG DefaultBeanDefinitionDocumentReader:98 - Loading bean definitions
-2015-06-26 13:22:34 DEBUG DefaultNamespaceHandlerResolver:157 - Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
-2015-06-26 13:22:34 DEBUG XmlBeanDefinitionReader:224 - Loaded 9 bean definitions from location pattern [spring.xml]
-2015-06-26 13:22:34 DEBUG ClassPathXmlApplicationContext:540 - Bean factory for org.springframework.context.support.ClassPathXmlApplicationContext@49e4cb85: org.springframework.beans.factory.support.DefaultListableBeanFactory@4923ab24: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,dataSourceForJDBC,hibernate4AnnotatedSessionFactory,hibernateUtil,bc,mySaltGenerator,hibernateStringEncryptor,environmentVariablesConfiguration]; root of factory hierarchy
-2015-06-26 13:22:34 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean &apos;org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0&apos;
-2015-06-26 13:22:34 DEBUG DefaultListableBeanFactory:450 - Creating instance of bean &apos;org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0&apos;
-2015-06-26 13:22:34 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean &apos;org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0&apos; to allow for resolving potential circular references
-2015-06-26 13:22:34 DEBUG DefaultListableBeanFactory:478 - Finished creating instance of bean &apos;org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0&apos;
-2015-06-26 13:22:34 DEBUG MutablePropertySources:109 - Adding [environmentProperties] PropertySource with lowest search precedence
-2015-06-26 13:22:34 INFO  PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [config.properties]
-2015-06-26 13:22:34 DEBUG MutablePropertySources:109 - Adding [localProperties] PropertySource with lowest search precedence
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;driverClassName&apos; in [environmentProperties]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;driverClassName&apos; in [systemProperties]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;driverClassName&apos; in [systemEnvironment]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:103 - Could not find key &apos;driverClassName&apos; in any property source. Returning [null]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;driverClassName&apos; in [localProperties]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:90 - Found key &apos;driverClassName&apos; in [localProperties] with type [String] and value &apos;com.mysql.jdbc.Driver&apos;
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;url&apos; in [environmentProperties]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;url&apos; in [systemProperties]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;url&apos; in [systemEnvironment]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:103 - Could not find key &apos;url&apos; in any property source. Returning [null]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;url&apos; in [localProperties]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:90 - Found key &apos;url&apos; in [localProperties] with type [String] and value &apos;jdbc:mysql://localhost:3306/todo&apos;
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;username&apos; in [environmentProperties]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;username&apos; in [systemProperties]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;username&apos; in [systemEnvironment]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:103 - Could not find key &apos;username&apos; in any property source. Returning [null]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;username&apos; in [localProperties]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:90 - Found key &apos;username&apos; in [localProperties] with type [String] and value &apos;root&apos;
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;password&apos; in [environmentProperties]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;password&apos; in [systemProperties]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;password&apos; in [systemEnvironment]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:103 - Could not find key &apos;password&apos; in any property source. Returning [null]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;password&apos; in [localProperties]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:90 - Found key &apos;password&apos; in [localProperties] with type [String] and value &apos;root&apos;
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;driverClassName&apos; in [environmentProperties]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;driverClassName&apos; in [systemProperties]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;driverClassName&apos; in [systemEnvironment]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:103 - Could not find key &apos;driverClassName&apos; in any property source. Returning [null]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;driverClassName&apos; in [localProperties]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:90 - Found key &apos;driverClassName&apos; in [localProperties] with type [String] and value &apos;com.mysql.jdbc.Driver&apos;
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;url&apos; in [environmentProperties]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;url&apos; in [systemProperties]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;url&apos; in [systemEnvironment]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:103 - Could not find key &apos;url&apos; in any property source. Returning [null]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;url&apos; in [localProperties]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:90 - Found key &apos;url&apos; in [localProperties] with type [String] and value &apos;jdbc:mysql://localhost:3306/todo&apos;
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;username&apos; in [environmentProperties]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;username&apos; in [systemProperties]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;username&apos; in [systemEnvironment]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:103 - Could not find key &apos;username&apos; in any property source. Returning [null]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;username&apos; in [localProperties]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:90 - Found key &apos;username&apos; in [localProperties] with type [String] and value &apos;root&apos;
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;password&apos; in [environmentProperties]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;password&apos; in [systemProperties]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;password&apos; in [systemEnvironment]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:103 - Could not find key &apos;password&apos; in any property source. Returning [null]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;password&apos; in [localProperties]
-2015-06-26 13:22:34 DEBUG PropertySourcesPropertyResolver:90 - Found key &apos;password&apos; in [localProperties] with type [String] and value &apos;root&apos;
-2015-06-26 13:22:34 DEBUG ClassPathXmlApplicationContext:646 - Unable to locate MessageSource with name &apos;messageSource&apos;: using default [org.springframework.context.support.DelegatingMessageSource@7364985f]
-2015-06-26 13:22:34 DEBUG ClassPathXmlApplicationContext:670 - Unable to locate ApplicationEventMulticaster with name &apos;applicationEventMulticaster&apos;: using default [org.springframework.context.event.SimpleApplicationEventMulticaster@3f200884]
-2015-06-26 13:22:34 DEBUG DefaultListableBeanFactory:724 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4923ab24: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,dataSourceForJDBC,hibernate4AnnotatedSessionFactory,hibernateUtil,bc,mySaltGenerator,hibernateStringEncryptor,environmentVariablesConfiguration]; root of factory hierarchy
-2015-06-26 13:22:34 DEBUG DefaultListableBeanFactory:248 - Returning cached instance of singleton bean &apos;org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0&apos;
-2015-06-26 13:22:34 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean &apos;dataSource&apos;
-2015-06-26 13:22:34 DEBUG DefaultListableBeanFactory:450 - Creating instance of bean &apos;dataSource&apos;
-2015-06-26 13:22:34 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean &apos;dataSource&apos; to allow for resolving potential circular references
-2015-06-26 13:22:34 DEBUG DefaultListableBeanFactory:478 - Finished creating instance of bean &apos;dataSource&apos;
-2015-06-26 13:22:34 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean &apos;dataSourceForJDBC&apos;
-2015-06-26 13:22:34 DEBUG DefaultListableBeanFactory:450 - Creating instance of bean &apos;dataSourceForJDBC&apos;
-2015-06-26 13:22:34 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean &apos;dataSourceForJDBC&apos; to allow for resolving potential circular references
-2015-06-26 13:22:34 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
-2015-06-26 13:22:34 DEBUG DefaultListableBeanFactory:478 - Finished creating instance of bean &apos;dataSourceForJDBC&apos;
-2015-06-26 13:22:34 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean &apos;hibernate4AnnotatedSessionFactory&apos;
-2015-06-26 13:22:34 DEBUG DefaultListableBeanFactory:450 - Creating instance of bean &apos;hibernate4AnnotatedSessionFactory&apos;
-2015-06-26 13:22:34 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean &apos;hibernate4AnnotatedSessionFactory&apos; to allow for resolving potential circular references
-2015-06-26 13:22:34 DEBUG DefaultListableBeanFactory:248 - Returning cached instance of singleton bean &apos;dataSource&apos;
-2015-06-26 13:22:34 DEBUG DefaultListableBeanFactory:1616 - Invoking afterPropertiesSet() on bean with name &apos;hibernate4AnnotatedSessionFactory&apos;
-2015-06-26 13:22:34 DEBUG logging:194 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration boolean -&gt; org.hibernate.type.BooleanType@56de5251
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration boolean -&gt; org.hibernate.type.BooleanType@56de5251
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Boolean -&gt; org.hibernate.type.BooleanType@56de5251
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration numeric_boolean -&gt; org.hibernate.type.NumericBooleanType@71b1176b
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration true_false -&gt; org.hibernate.type.TrueFalseType@51e5fc98
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration yes_no -&gt; org.hibernate.type.YesNoType@7ee955a8
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration byte -&gt; org.hibernate.type.ByteType@161479c6
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration byte -&gt; org.hibernate.type.ByteType@161479c6
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Byte -&gt; org.hibernate.type.ByteType@161479c6
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration character -&gt; org.hibernate.type.CharacterType@778d1062
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration char -&gt; org.hibernate.type.CharacterType@778d1062
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Character -&gt; org.hibernate.type.CharacterType@778d1062
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration short -&gt; org.hibernate.type.ShortType@5ccddd20
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration short -&gt; org.hibernate.type.ShortType@5ccddd20
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Short -&gt; org.hibernate.type.ShortType@5ccddd20
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration integer -&gt; org.hibernate.type.IntegerType@59d016c9
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration int -&gt; org.hibernate.type.IntegerType@59d016c9
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Integer -&gt; org.hibernate.type.IntegerType@59d016c9
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration long -&gt; org.hibernate.type.LongType@7adda9cc
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration long -&gt; org.hibernate.type.LongType@7adda9cc
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Long -&gt; org.hibernate.type.LongType@7adda9cc
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration float -&gt; org.hibernate.type.FloatType@2ea227af
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration float -&gt; org.hibernate.type.FloatType@2ea227af
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Float -&gt; org.hibernate.type.FloatType@2ea227af
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration double -&gt; org.hibernate.type.DoubleType@3c22fc4c
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration double -&gt; org.hibernate.type.DoubleType@3c22fc4c
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Double -&gt; org.hibernate.type.DoubleType@3c22fc4c
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration big_decimal -&gt; org.hibernate.type.BigDecimalType@36c88a32
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration java.math.BigDecimal -&gt; org.hibernate.type.BigDecimalType@36c88a32
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration big_integer -&gt; org.hibernate.type.BigIntegerType@7ce3cb8e
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration java.math.BigInteger -&gt; org.hibernate.type.BigIntegerType@7ce3cb8e
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration string -&gt; org.hibernate.type.StringType@22a637e7
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.String -&gt; org.hibernate.type.StringType@22a637e7
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration nstring -&gt; org.hibernate.type.StringNVarcharType@2473d930
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration ncharacter -&gt; org.hibernate.type.CharacterNCharType@5ae50ce6
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration url -&gt; org.hibernate.type.UrlType@48e4374
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration java.net.URL -&gt; org.hibernate.type.UrlType@48e4374
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration date -&gt; org.hibernate.type.DateType@470f1802
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Date -&gt; org.hibernate.type.DateType@470f1802
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration time -&gt; org.hibernate.type.TimeType@70e8f8e
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Time -&gt; org.hibernate.type.TimeType@70e8f8e
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration timestamp -&gt; org.hibernate.type.TimestampType@e056f20
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Timestamp -&gt; org.hibernate.type.TimestampType@e056f20
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.Date -&gt; org.hibernate.type.TimestampType@e056f20
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration dbtimestamp -&gt; org.hibernate.type.DbTimestampType@10e41621
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration calendar -&gt; org.hibernate.type.CalendarType@a9cd3b1
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.Calendar -&gt; org.hibernate.type.CalendarType@a9cd3b1
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.GregorianCalendar -&gt; org.hibernate.type.CalendarType@a9cd3b1
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration calendar_date -&gt; org.hibernate.type.CalendarDateType@9225652
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration locale -&gt; org.hibernate.type.LocaleType@63355449
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.Locale -&gt; org.hibernate.type.LocaleType@63355449
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration currency -&gt; org.hibernate.type.CurrencyType@c267ef4
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.Currency -&gt; org.hibernate.type.CurrencyType@c267ef4
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration timezone -&gt; org.hibernate.type.TimeZoneType@1ddf84b8
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.TimeZone -&gt; org.hibernate.type.TimeZoneType@1ddf84b8
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration class -&gt; org.hibernate.type.ClassType@636be97c
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Class -&gt; org.hibernate.type.ClassType@636be97c
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration uuid-binary -&gt; org.hibernate.type.UUIDBinaryType@4facf68f
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.UUID -&gt; org.hibernate.type.UUIDBinaryType@4facf68f
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration uuid-char -&gt; org.hibernate.type.UUIDCharType@15c43bd9
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration pg-uuid -&gt; org.hibernate.type.PostgresUUIDType@39529185
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration binary -&gt; org.hibernate.type.BinaryType@27ce24aa
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration byte[] -&gt; org.hibernate.type.BinaryType@27ce24aa
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration [B -&gt; org.hibernate.type.BinaryType@27ce24aa
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration wrapper-binary -&gt; org.hibernate.type.WrapperBinaryType@647e447
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration Byte[] -&gt; org.hibernate.type.WrapperBinaryType@647e447
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration [Ljava.lang.Byte; -&gt; org.hibernate.type.WrapperBinaryType@647e447
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration image -&gt; org.hibernate.type.ImageType@130161f7
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration characters -&gt; org.hibernate.type.CharArrayType@7722c3c3
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration char[] -&gt; org.hibernate.type.CharArrayType@7722c3c3
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration [C -&gt; org.hibernate.type.CharArrayType@7722c3c3
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration wrapper-characters -&gt; org.hibernate.type.CharacterArrayType@16ec5519
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration [Ljava.lang.Character; -&gt; org.hibernate.type.CharacterArrayType@16ec5519
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration Character[] -&gt; org.hibernate.type.CharacterArrayType@16ec5519
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration text -&gt; org.hibernate.type.TextType@5119fb47
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration ntext -&gt; org.hibernate.type.NTextType@7714e963
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration blob -&gt; org.hibernate.type.BlobType@1d9b7cce
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Blob -&gt; org.hibernate.type.BlobType@1d9b7cce
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration materialized_blob -&gt; org.hibernate.type.MaterializedBlobType@14dd9eb7
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration clob -&gt; org.hibernate.type.ClobType@2e005c4b
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Clob -&gt; org.hibernate.type.ClobType@2e005c4b
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration nclob -&gt; org.hibernate.type.NClobType@12468a38
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.NClob -&gt; org.hibernate.type.NClobType@12468a38
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration materialized_clob -&gt; org.hibernate.type.MaterializedClobType@5876a9af
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration materialized_nclob -&gt; org.hibernate.type.MaterializedNClobType@6572421
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration serializable -&gt; org.hibernate.type.SerializableType@37afeb11
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration object -&gt; org.hibernate.type.ObjectType@399f45b1
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Object -&gt; org.hibernate.type.ObjectType@399f45b1
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration imm_date -&gt; org.hibernate.type.AdaptedImmutableType@79e2c065
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration imm_time -&gt; org.hibernate.type.AdaptedImmutableType@3a93b025
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration imm_timestamp -&gt; org.hibernate.type.AdaptedImmutableType@35cabb2a
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration imm_dbtimestamp -&gt; org.hibernate.type.AdaptedImmutableType@7e07db1f
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration imm_calendar -&gt; org.hibernate.type.AdaptedImmutableType@1189dd52
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration imm_calendar_date -&gt; org.hibernate.type.AdaptedImmutableType@36bc55de
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration imm_binary -&gt; org.hibernate.type.AdaptedImmutableType@564fabc8
-2015-06-26 13:22:34 DEBUG BasicTypeRegistry:146 - Adding type registration imm_serializable -&gt; org.hibernate.type.AdaptedImmutableType@16d04d3d
-2015-06-26 13:22:34 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
-2015-06-26 13:22:34 INFO  Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
-2015-06-26 13:22:34 INFO  Environment:239 - HHH000206: hibernate.properties not found
-2015-06-26 13:22:34 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
-2015-06-26 13:22:34 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid2] -&gt; [org.hibernate.id.UUIDGenerator]
-2015-06-26 13:22:34 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [guid] -&gt; [org.hibernate.id.GUIDGenerator]
-2015-06-26 13:22:34 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid] -&gt; [org.hibernate.id.UUIDHexGenerator]
-2015-06-26 13:22:34 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid.hex] -&gt; [org.hibernate.id.UUIDHexGenerator]
-2015-06-26 13:22:34 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [hilo] -&gt; [org.hibernate.id.TableHiLoGenerator]
-2015-06-26 13:22:34 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [assigned] -&gt; [org.hibernate.id.Assigned]
-2015-06-26 13:22:34 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [identity] -&gt; [org.hibernate.id.IdentityGenerator]
-2015-06-26 13:22:34 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [select] -&gt; [org.hibernate.id.SelectGenerator]
-2015-06-26 13:22:34 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [sequence] -&gt; [org.hibernate.id.SequenceGenerator]
-2015-06-26 13:22:34 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [seqhilo] -&gt; [org.hibernate.id.SequenceHiLoGenerator]
-2015-06-26 13:22:34 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [increment] -&gt; [org.hibernate.id.IncrementGenerator]
-2015-06-26 13:22:34 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [foreign] -&gt; [org.hibernate.id.ForeignGenerator]
-2015-06-26 13:22:34 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [sequence-identity] -&gt; [org.hibernate.id.SequenceIdentityGenerator]
-2015-06-26 13:22:34 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [enhanced-sequence] -&gt; [org.hibernate.id.enhanced.SequenceStyleGenerator]
-2015-06-26 13:22:34 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [enhanced-table] -&gt; [org.hibernate.id.enhanced.TableGenerator]
-2015-06-26 13:22:34 DEBUG IntegratorServiceImpl:63 - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
-2015-06-26 13:22:34 DEBUG IntegratorServiceImpl:63 - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
-2015-06-26 13:22:34 DEBUG IntegratorServiceImpl:63 - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
-2015-06-26 13:22:34 DEBUG StrategySelectorImpl:79 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5] -&gt; [org.hibernate.dialect.MySQL5Dialect] (replacing [org.hibernate.dialect.MySQL5Dialect])
-2015-06-26 13:22:34 DEBUG StrategySelectorImpl:79 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5InnoDB] -&gt; [org.hibernate.dialect.MySQL5InnoDBDialect] (replacing [org.hibernate.dialect.MySQL5InnoDBDialect])
-2015-06-26 13:22:34 DEBUG ServiceBinding:85 - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
-2015-06-26 13:22:34 DEBUG Configuration:1843 - Preparing to build session factory with filters : {}
-2015-06-26 13:22:34 DEBUG JdbcServicesImpl:128 - Database -&gt;
-       name : MySQL
-    version : 5.5.43-0ubuntu0.14.04.1
-      major : 5
-      minor : 5
-2015-06-26 13:22:34 DEBUG JdbcServicesImpl:139 - Driver -&gt;
-       name : MySQL Connector Java
-    version : mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )
-      major : 5
-      minor : 1
-2015-06-26 13:22:34 DEBUG JdbcServicesImpl:150 - JDBC version : 4.0
-2015-06-26 13:22:34 DEBUG StandardRefCursorSupport:187 - Unexpected error trying to gauge level of JDBC REF_CURSOR support : null
-2015-06-26 13:22:35 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2015-06-26 13:22:35 DEBUG Configuration:3805 - Processing hbm.xml files
-2015-06-26 13:22:35 DEBUG Configuration:3835 - Process annotated classes
-2015-06-26 13:22:35 DEBUG AnnotationBinder:601 - Binding entity from annotated class: todo.todoManager.model.Todo
-2015-06-26 13:22:35 DEBUG AnnotationBinder:1495 - Binding type definition: encryptedString
-2015-06-26 13:22:35 DEBUG Configuration:3091 - Added encryptedString with class org.jasypt.hibernate4.type.EncryptedStringType
-2015-06-26 13:22:35 DEBUG Ejb3Column:240 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName&apos;DTYPE&apos;, discriminatorTypeName=&apos;string&apos;}
-2015-06-26 13:22:35 DEBUG AnnotationBinder:1185 - No value specified for &apos;javax.persistence.sharedCache.mode&apos;; using UNSPECIFIED
-2015-06-26 13:22:35 DEBUG EntityBinder:399 - Import with entity name Todo
-2015-06-26 13:22:35 DEBUG EntityBinder:612 - Bind entity todo.todoManager.model.Todo on table Todo
-2015-06-26 13:22:35 DEBUG Ejb3Column:240 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Todo), mappingColumn=id, insertable=true, updatable=true, unique=false}
-2015-06-26 13:22:35 DEBUG PropertyBinder:185 - MetadataSourceProcessor property id with lazy=false
-2015-06-26 13:22:35 DEBUG AbstractPropertyHolder:106 - Attempting to locate auto-apply AttributeConverter for property [todo.todoManager.model.Todo:id]
-2015-06-26 13:22:35 DEBUG SimpleValueBinder:388 - building SimpleValue for id
-2015-06-26 13:22:35 DEBUG PropertyBinder:271 - Building property id
-2015-06-26 13:22:35 DEBUG Ejb3Column:240 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Todo), mappingColumn=text, insertable=true, updatable=true, unique=false}
-2015-06-26 13:22:35 DEBUG PropertyBinder:185 - MetadataSourceProcessor property text with lazy=false
-2015-06-26 13:22:35 DEBUG AbstractPropertyHolder:106 - Attempting to locate auto-apply AttributeConverter for property [todo.todoManager.model.Todo:text]
-2015-06-26 13:22:35 DEBUG SimpleValueBinder:388 - building SimpleValue for text
-2015-06-26 13:22:35 DEBUG PropertyBinder:271 - Building property text
-2015-06-26 13:22:35 DEBUG Ejb3Column:240 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Todo), mappingColumn=title, insertable=true, updatable=true, unique=false}
-2015-06-26 13:22:35 DEBUG PropertyBinder:185 - MetadataSourceProcessor property title with lazy=false
-2015-06-26 13:22:35 DEBUG AbstractPropertyHolder:106 - Attempting to locate auto-apply AttributeConverter for property [todo.todoManager.model.Todo:title]
-2015-06-26 13:22:35 DEBUG SimpleValueBinder:388 - building SimpleValue for title
-2015-06-26 13:22:35 DEBUG PropertyBinder:271 - Building property title
-2015-06-26 13:22:35 DEBUG SimpleValueBinder:428 - Starting fillSimpleValue for id
-2015-06-26 13:22:35 DEBUG SimpleValueBinder:428 - Starting fillSimpleValue for text
-2015-06-26 13:22:35 DEBUG SimpleValueBinder:428 - Starting fillSimpleValue for title
-2015-06-26 13:22:35 DEBUG Configuration:1484 - Processing fk mappings (*ToOne and JoinedSubclass)
-2015-06-26 13:22:35 DEBUG Configuration:1689 - Processing extends queue
-2015-06-26 13:22:35 DEBUG Configuration:1747 - Processing extends queue
-2015-06-26 13:22:35 DEBUG Configuration:1692 - Processing collection mappings
-2015-06-26 13:22:35 DEBUG Configuration:1702 - Processing native query and ResultSetMapping mappings
-2015-06-26 13:22:35 DEBUG Configuration:1710 - Processing association property references
-2015-06-26 13:22:35 DEBUG Configuration:1732 - Creating tables&apos; unique integer identifiers
-2015-06-26 13:22:35 DEBUG Configuration:1733 - Processing foreign key constraints
-2015-06-26 13:22:35 DEBUG JtaPlatformInitiator:59 - No JtaPlatform was specified, checking resolver
-2015-06-26 13:22:35 DEBUG JtaPlatformResolverInitiator:50 - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
-2015-06-26 13:22:35 DEBUG StandardJtaPlatformResolver:118 - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2015-06-26 13:22:35 DEBUG SettingsFactory:122 - Automatic flush during beforeCompletion(): disabled
-2015-06-26 13:22:35 DEBUG SettingsFactory:128 - Automatic session close at end of transaction: disabled
-2015-06-26 13:22:35 DEBUG SettingsFactory:139 - JDBC batch size: 15
-2015-06-26 13:22:35 DEBUG SettingsFactory:145 - JDBC batch updates for versioned data: disabled
-2015-06-26 13:22:35 DEBUG SettingsFactory:155 - Scrollable result sets: enabled
-2015-06-26 13:22:35 DEBUG SettingsFactory:161 - Wrap result sets: disabled
-2015-06-26 13:22:35 DEBUG SettingsFactory:167 - JDBC3 getGeneratedKeys(): enabled
-2015-06-26 13:22:35 DEBUG SettingsFactory:179 - multi-tenancy strategy : NONE
-2015-06-26 13:22:35 DEBUG SettingsFactory:185 - Connection release mode: auto
-2015-06-26 13:22:35 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
-2015-06-26 13:22:35 DEBUG SettingsFactory:207 - Using BatchFetchStyle : LEGACY
-2015-06-26 13:22:35 DEBUG SettingsFactory:226 - Maximum outer join fetch depth: 2
-2015-06-26 13:22:35 DEBUG SettingsFactory:232 - Default batch fetch size: 1
-2015-06-26 13:22:35 DEBUG SettingsFactory:238 - Generate SQL with comments: disabled
-2015-06-26 13:22:35 DEBUG SettingsFactory:244 - Order SQL updates by primary key: disabled
-2015-06-26 13:22:35 DEBUG SettingsFactory:250 - Order SQL inserts for batching: disabled
-2015-06-26 13:22:35 DEBUG SettingsFactory:258 - Default null ordering: none
-2015-06-26 13:22:35 DEBUG SettingsFactory:501 - Query translator: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory
-2015-06-26 13:22:35 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
-2015-06-26 13:22:35 DEBUG SettingsFactory:268 - Query language substitutions: {}
-2015-06-26 13:22:35 DEBUG SettingsFactory:274 - JPA-QL strict compliance: disabled
-2015-06-26 13:22:35 DEBUG SettingsFactory:282 - Second-level cache: enabled
-2015-06-26 13:22:35 DEBUG SettingsFactory:288 - Query cache: disabled
-2015-06-26 13:22:35 DEBUG RegionFactoryInitiator:105 - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
-2015-06-26 13:22:35 DEBUG SettingsFactory:301 - Optimize cache for minimal puts: disabled
-2015-06-26 13:22:35 DEBUG SettingsFactory:316 - Structured second-level cache entries: disabled
-2015-06-26 13:22:35 DEBUG SettingsFactory:326 - Second-level cache direct-reference entries: disabled
-2015-06-26 13:22:35 DEBUG SettingsFactory:332 - Automatic eviction of collection cache: disabled
-2015-06-26 13:22:35 DEBUG SettingsFactory:340 - Statistics: disabled
-2015-06-26 13:22:35 DEBUG SettingsFactory:346 - Deleted entity synthetic identifier rollback: disabled
-2015-06-26 13:22:35 DEBUG SettingsFactory:373 - Default entity-mode: pojo
-2015-06-26 13:22:35 DEBUG SettingsFactory:379 - Named query checking : enabled
-2015-06-26 13:22:35 DEBUG SettingsFactory:385 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
-2015-06-26 13:22:35 DEBUG SettingsFactory:403 - Allow initialization of lazy state outside session : : disabled
-2015-06-26 13:22:35 DEBUG SettingsFactory:413 - JTA Track by Thread: enabled
-2015-06-26 13:22:35 DEBUG SessionFactoryImpl:229 - Building session factory
-2015-06-26 13:22:35 DEBUG SessionFactoryImpl:285 - Session factory constructed with filter configurations : {}
-2015-06-26 13:22:35 DEBUG SessionFactoryImpl:286 - Instantiating session factory with properties: {java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=/usr/lib/jvm/java-8-oracle/jre/lib/amd64, java.vm.version=25.45-b02, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=:, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.country=IN, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=unknown, java.vm.specification.name=Java Virtual Machine Specification, user.dir=/home/webonise/Documents/workspace-sts-3.6.4.RELEASE/TodoManager, java.runtime.version=1.8.0_45-b14, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, basedir=/home/webonise/Documents/workspace-sts-3.6.4.RELEASE/TodoManager, hibernate.current_session_context_class=org.springframework.orm.hibernate4.SpringSessionContext, java.endorsed.dirs=/usr/lib/jvm/java-8-oracle/jre/lib/endorsed, os.arch=amd64, surefire.real.class.path=/home/webonise/Documents/workspace-sts-3.6.4.RELEASE/TodoManager/target/surefire/surefirebooter2171494182895244144.jar, java.io.tmpdir=/tmp, line.separator=
-, java.vm.specification.vendor=Oracle Corporation, os.name=Linux, sun.jnu.encoding=UTF-8, java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib, hibernate.connection.datasource=org.apache.commons.dbcp.BasicDataSource@73302995, surefire.test.class.path=/home/webonise/Documents/workspace-sts-3.6.4.RELEASE/TodoManager/target/test-classes:/home/webonise/Documents/workspace-sts-3.6.4.RELEASE/TodoManager/target/classes:/home/webonise/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/webonise/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/webonise/.m2/repository/org/hibernate/hibernate-core/4.3.10.Final/hibernate-core-4.3.10.Final.jar:/home/webonise/.m2/repository/org/jboss/logging/jboss-logging/3.1.3.GA/jboss-logging-3.1.3.GA.jar:/home/webonise/.m2/repository/org/jboss/logging/jboss-logging-annotations/1.2.0.Beta1/jboss-logging-annotations-1.2.0.Beta1.jar:/home/webonise/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.0.Final/jboss-transaction-api_1.2_spec-1.0.0.Final.jar:/home/webonise/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/home/webonise/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar:/home/webonise/.m2/repository/org/hibernate/common/hibernate-commons-annotations/4.0.5.Final/hibernate-commons-annotations-4.0.5.Final.jar:/home/webonise/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar:/home/webonise/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar:/home/webonise/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/webonise/.m2/repository/org/jboss/jandex/1.1.0.Final/jandex-1.1.0.Final.jar:/home/webonise/.m2/repository/org/hibernate/hibernate-entitymanager/4.3.10.Final/hibernate-entitymanager-4.3.10.Final.jar:/home/webonise/.m2/repository/org/springframework/spring-core/4.1.6.RELEASE/spring-core-4.1.6.RELEASE.jar:/home/webonise/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/webonise/.m2/repository/org/springframework/spring-orm/4.1.6.RELEASE/spring-orm-4.1.6.RELEASE.jar:/home/webonise/.m2/repository/org/springframework/spring-beans/4.1.6.RELEASE/spring-beans-4.1.6.RELEASE.jar:/home/webonise/.m2/repository/org/springframework/spring-jdbc/4.1.6.RELEASE/spring-jdbc-4.1.6.RELEASE.jar:/home/webonise/.m2/repository/org/springframework/spring-tx/4.1.6.RELEASE/spring-tx-4.1.6.RELEASE.jar:/home/webonise/.m2/repository/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4.jar:/home/webonise/.m2/repository/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar:/home/webonise/.m2/repository/org/springframework/spring-context/4.1.6.RELEASE/spring-context-4.1.6.RELEASE.jar:/home/webonise/.m2/repository/org/springframework/spring-aop/4.1.6.RELEASE/spring-aop-4.1.6.RELEASE.jar:/home/webonise/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/home/webonise/.m2/repository/org/springframework/spring-expression/4.1.6.RELEASE/spring-expression-4.1.6.RELEASE.jar:/home/webonise/.m2/repository/mysql/mysql-connector-java/5.1.35/mysql-connector-java-5.1.35.jar:/home/webonise/.m2/repository/org/jasypt/jasypt/1.9.2/jasypt-1.9.2.jar:/home/webonise/.m2/repository/org/jasypt/jasypt-hibernate4/1.9.2/jasypt-hibernate4-1.9.2.jar:/home/webonise/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/home/webonise/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/home/webonise/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.52/bcprov-jdk15on-1.52.jar:, java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=3.13.0-32-generic, user.home=/home/webonise, user.timezone=Asia/Kolkata, java.awt.printerjob=sun.print.PSPrinterJob, java.specification.version=1.8, file.encoding=UTF-8, user.name=webonise, java.class.path=/home/webonise/Documents/workspace-sts-3.6.4.RELEASE/TodoManager/target/test-classes:/home/webonise/Documents/workspace-sts-3.6.4.RELEASE/TodoManager/target/classes:/home/webonise/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/webonise/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/webonise/.m2/repository/org/hibernate/hibernate-core/4.3.10.Final/hibernate-core-4.3.10.Final.jar:/home/webonise/.m2/repository/org/jboss/logging/jboss-logging/3.1.3.GA/jboss-logging-3.1.3.GA.jar:/home/webonise/.m2/repository/org/jboss/logging/jboss-logging-annotations/1.2.0.Beta1/jboss-logging-annotations-1.2.0.Beta1.jar:/home/webonise/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.0.Final/jboss-transaction-api_1.2_spec-1.0.0.Final.jar:/home/webonise/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/home/webonise/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar:/home/webonise/.m2/repository/org/hibernate/common/hibernate-commons-annotations/4.0.5.Final/hibernate-commons-annotations-4.0.5.Final.jar:/home/webonise/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar:/home/webonise/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar:/home/webonise/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/webonise/.m2/repository/org/jboss/jandex/1.1.0.Final/jandex-1.1.0.Final.jar:/home/webonise/.m2/repository/org/hibernate/hibernate-entitymanager/4.3.10.Final/hibernate-entitymanager-4.3.10.Final.jar:/home/webonise/.m2/repository/org/springframework/spring-core/4.1.6.RELEASE/spring-core-4.1.6.RELEASE.jar:/home/webonise/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/webonise/.m2/repository/org/springframework/spring-orm/4.1.6.RELEASE/spring-orm-4.1.6.RELEASE.jar:/home/webonise/.m2/repository/org/springframework/spring-beans/4.1.6.RELEASE/spring-beans-4.1.6.RELEASE.jar:/home/webonise/.m2/repository/org/springframework/spring-jdbc/4.1.6.RELEASE/spring-jdbc-4.1.6.RELEASE.jar:/home/webonise/.m2/repository/org/springframework/spring-tx/4.1.6.RELEASE/spring-tx-4.1.6.RELEASE.jar:/home/webonise/.m2/repository/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4.jar:/home/webonise/.m2/repository/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar:/home/webonise/.m2/repository/org/springframework/spring-context/4.1.6.RELEASE/spring-context-4.1.6.RELEASE.jar:/home/webonise/.m2/repository/org/springframework/spring-aop/4.1.6.RELEASE/spring-aop-4.1.6.RELEASE.jar:/home/webonise/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/home/webonise/.m2/repository/org/springframework/spring-expression/4.1.6.RELEASE/spring-expression-4.1.6.RELEASE.jar:/home/webonise/.m2/repository/mysql/mysql-connector-java/5.1.35/mysql-connector-java-5.1.35.jar:/home/webonise/.m2/repository/org/jasypt/jasypt/1.9.2/jasypt-1.9.2.jar:/home/webonise/.m2/repository/org/jasypt/jasypt-hibernate4/1.9.2/jasypt-hibernate4-1.9.2.jar:/home/webonise/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/home/webonise/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/home/webonise/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.52/bcprov-jdk15on-1.52.jar:, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.classLoader.application=sun.misc.Launcher$AppClassLoader@6bc7c054, java.vm.specification.version=1.8, sun.arch.data.model=64, java.home=/usr/lib/jvm/java-8-oracle/jre, sun.java.command=/home/webonise/Documents/workspace-sts-3.6.4.RELEASE/TodoManager/target/surefire/surefirebooter2171494182895244144.jar /home/webonise/Documents/workspace-sts-3.6.4.RELEASE/TodoManager/target/surefire/surefire9060353146151227107tmp /home/webonise/Documents/workspace-sts-3.6.4.RELEASE/TodoManager/target/surefire/surefire_02108252038881198175tmp, hibernate.dialect=org.hibernate.dialect.MySQLDialect, java.specification.vendor=Oracle Corporation, user.language=en, awt.toolkit=sun.awt.X11.XToolkit, java.vm.info=mixed mode, java.version=1.8.0_45, java.ext.dirs=/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext, sun.boot.class.path=/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes, java.vendor=Oracle Corporation, localRepository=/home/webonise/.m2/repository, file.separator=/, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, hibernate.hbm2ddl.auto=update, sun.cpu.endian=little, sun.io.unicode.encoding=UnicodeLittle, sun.desktop=gnome, sun.cpu.isalist=}
-2015-06-26 13:22:35 DEBUG JaccIntegrator:90 - Skipping JACC integration as it was not enabled
-2015-06-26 13:22:35 DEBUG DefaultIdentifierGeneratorFactory:107 - Setting dialect [org.hibernate.dialect.MySQLDialect]
-2015-06-26 13:22:35 DEBUG AbstractEntityPersister:3676 - Static SQL for entity: todo.todoManager.model.Todo
-2015-06-26 13:22:35 DEBUG AbstractEntityPersister:3681 -  Version select: select id from Todo where id =?
-2015-06-26 13:22:35 DEBUG AbstractEntityPersister:3684 -  Snapshot select: select todo_.id, todo_.text as text2_0_, todo_.title as title3_0_ from Todo todo_ where todo_.id=?
-2015-06-26 13:22:35 DEBUG AbstractEntityPersister:3687 -  Insert 0: insert into Todo (text, title, id) values (?, ?, ?)
-2015-06-26 13:22:35 DEBUG AbstractEntityPersister:3688 -  Update 0: update Todo set text=?, title=? where id=?
-2015-06-26 13:22:35 DEBUG AbstractEntityPersister:3689 -  Delete 0: delete from Todo where id=?
-2015-06-26 13:22:35 DEBUG AbstractEntityPersister:3692 -  Identity insert: insert into Todo (text, title) values (?, ?)
-2015-06-26 13:22:35 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@47f4e407]
-2015-06-26 13:22:35 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : text
-2015-06-26 13:22:35 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : title
-2015-06-26 13:22:35 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
-2015-06-26 13:22:35 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace &lt;gen:0&gt;
-2015-06-26 13:22:35 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=todo.todoManager.model.Todo)
-    - Returns
-       - EntityReturnImpl(entity=todo.todoManager.model.Todo, querySpaceUid=&lt;gen:0&gt;, path=todo.todoManager.model.Todo)
-    - QuerySpaces
-       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=todo.todoManager.model.Todo)
-          - SQL table alias mapping - todo0_
-          - alias suffix - 0_
-          - suffixed key columns - {id1_0_0_}
-
-2015-06-26 13:22:35 DEBUG EntityLoader:146 - Static select for entity todo.todoManager.model.Todo [NONE]: select todo0_.id as id1_0_0_, todo0_.text as text2_0_0_, todo0_.title as title3_0_0_ from Todo todo0_ where todo0_.id=?
-2015-06-26 13:22:35 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3b0c9195]
-2015-06-26 13:22:35 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : text
-2015-06-26 13:22:35 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : title
-2015-06-26 13:22:35 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
-2015-06-26 13:22:35 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace &lt;gen:0&gt;
-2015-06-26 13:22:35 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=todo.todoManager.model.Todo)
-    - Returns
-       - EntityReturnImpl(entity=todo.todoManager.model.Todo, querySpaceUid=&lt;gen:0&gt;, path=todo.todoManager.model.Todo)
-    - QuerySpaces
-       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=todo.todoManager.model.Todo)
-          - SQL table alias mapping - todo0_
-          - alias suffix - 0_
-          - suffixed key columns - {id1_0_0_}
-
-2015-06-26 13:22:35 DEBUG EntityLoader:146 - Static select for entity todo.todoManager.model.Todo [READ]: select todo0_.id as id1_0_0_, todo0_.text as text2_0_0_, todo0_.title as title3_0_0_ from Todo todo0_ where todo0_.id=?
-2015-06-26 13:22:35 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2c7b5824]
-2015-06-26 13:22:35 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : text
-2015-06-26 13:22:35 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : title
-2015-06-26 13:22:35 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
-2015-06-26 13:22:35 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace &lt;gen:0&gt;
-2015-06-26 13:22:35 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=todo.todoManager.model.Todo)
-    - Returns
-       - EntityReturnImpl(entity=todo.todoManager.model.Todo, querySpaceUid=&lt;gen:0&gt;, path=todo.todoManager.model.Todo)
-    - QuerySpaces
-       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=todo.todoManager.model.Todo)
-          - SQL table alias mapping - todo0_
-          - alias suffix - 0_
-          - suffixed key columns - {id1_0_0_}
-
-2015-06-26 13:22:35 DEBUG EntityLoader:146 - Static select for entity todo.todoManager.model.Todo [UPGRADE]: select todo0_.id as id1_0_0_, todo0_.text as text2_0_0_, todo0_.title as title3_0_0_ from Todo todo0_ where todo0_.id=? for update
-2015-06-26 13:22:35 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5cdd09b1]
-2015-06-26 13:22:35 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : text
-2015-06-26 13:22:35 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : title
-2015-06-26 13:22:35 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
-2015-06-26 13:22:35 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace &lt;gen:0&gt;
-2015-06-26 13:22:35 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=todo.todoManager.model.Todo)
-    - Returns
-       - EntityReturnImpl(entity=todo.todoManager.model.Todo, querySpaceUid=&lt;gen:0&gt;, path=todo.todoManager.model.Todo)
-    - QuerySpaces
-       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=todo.todoManager.model.Todo)
-          - SQL table alias mapping - todo0_
-          - alias suffix - 0_
-          - suffixed key columns - {id1_0_0_}
-
-2015-06-26 13:22:35 DEBUG EntityLoader:146 - Static select for entity todo.todoManager.model.Todo [UPGRADE_NOWAIT]: select todo0_.id as id1_0_0_, todo0_.text as text2_0_0_, todo0_.title as title3_0_0_ from Todo todo0_ where todo0_.id=? for update
-2015-06-26 13:22:35 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7e8dcdaa]
-2015-06-26 13:22:35 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : text
-2015-06-26 13:22:35 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : title
-2015-06-26 13:22:35 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
-2015-06-26 13:22:35 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace &lt;gen:0&gt;
-2015-06-26 13:22:35 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=todo.todoManager.model.Todo)
-    - Returns
-       - EntityReturnImpl(entity=todo.todoManager.model.Todo, querySpaceUid=&lt;gen:0&gt;, path=todo.todoManager.model.Todo)
-    - QuerySpaces
-       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=todo.todoManager.model.Todo)
-          - SQL table alias mapping - todo0_
-          - alias suffix - 0_
-          - suffixed key columns - {id1_0_0_}
-
-2015-06-26 13:22:35 DEBUG EntityLoader:146 - Static select for entity todo.todoManager.model.Todo [UPGRADE_SKIPLOCKED]: select todo0_.id as id1_0_0_, todo0_.text as text2_0_0_, todo0_.title as title3_0_0_ from Todo todo0_ where todo0_.id=? for update
-2015-06-26 13:22:35 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5cbe877d]
-2015-06-26 13:22:35 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : text
-2015-06-26 13:22:35 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : title
-2015-06-26 13:22:35 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
-2015-06-26 13:22:35 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace &lt;gen:0&gt;
-2015-06-26 13:22:35 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=todo.todoManager.model.Todo)
-    - Returns
-       - EntityReturnImpl(entity=todo.todoManager.model.Todo, querySpaceUid=&lt;gen:0&gt;, path=todo.todoManager.model.Todo)
-    - QuerySpaces
-       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=todo.todoManager.model.Todo)
-          - SQL table alias mapping - todo0_
-          - alias suffix - 0_
-          - suffixed key columns - {id1_0_0_}
-
-2015-06-26 13:22:35 DEBUG EntityLoader:146 - Static select for entity todo.todoManager.model.Todo [FORCE]: select todo0_.id as id1_0_0_, todo0_.text as text2_0_0_, todo0_.title as title3_0_0_ from Todo todo0_ where todo0_.id=? for update
-2015-06-26 13:22:35 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4cf8b2dc]
-2015-06-26 13:22:35 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : text
-2015-06-26 13:22:35 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : title
-2015-06-26 13:22:35 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
-2015-06-26 13:22:35 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace &lt;gen:0&gt;
-2015-06-26 13:22:35 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=todo.todoManager.model.Todo)
-    - Returns
-       - EntityReturnImpl(entity=todo.todoManager.model.Todo, querySpaceUid=&lt;gen:0&gt;, path=todo.todoManager.model.Todo)
-    - QuerySpaces
-       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=todo.todoManager.model.Todo)
-          - SQL table alias mapping - todo0_
-          - alias suffix - 0_
-          - suffixed key columns - {id1_0_0_}
-
-2015-06-26 13:22:35 DEBUG EntityLoader:146 - Static select for entity todo.todoManager.model.Todo [PESSIMISTIC_READ]: select todo0_.id as id1_0_0_, todo0_.text as text2_0_0_, todo0_.title as title3_0_0_ from Todo todo0_ where todo0_.id=? lock in share mode
-2015-06-26 13:22:35 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5829e4f4]
-2015-06-26 13:22:35 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : text
-2015-06-26 13:22:35 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : title
-2015-06-26 13:22:35 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
-2015-06-26 13:22:35 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace &lt;gen:0&gt;
-2015-06-26 13:22:35 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=todo.todoManager.model.Todo)
-    - Returns
-       - EntityReturnImpl(entity=todo.todoManager.model.Todo, querySpaceUid=&lt;gen:0&gt;, path=todo.todoManager.model.Todo)
-    - QuerySpaces
-       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=todo.todoManager.model.Todo)
-          - SQL table alias mapping - todo0_
-          - alias suffix - 0_
-          - suffixed key columns - {id1_0_0_}
-
-2015-06-26 13:22:35 DEBUG EntityLoader:146 - Static select for entity todo.todoManager.model.Todo [PESSIMISTIC_WRITE]: select todo0_.id as id1_0_0_, todo0_.text as text2_0_0_, todo0_.title as title3_0_0_ from Todo todo0_ where todo0_.id=? for update
-2015-06-26 13:22:35 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4bff64c2]
-2015-06-26 13:22:35 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : text
-2015-06-26 13:22:35 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : title
-2015-06-26 13:22:35 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
-2015-06-26 13:22:35 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace &lt;gen:0&gt;
-2015-06-26 13:22:35 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=todo.todoManager.model.Todo)
-    - Returns
-       - EntityReturnImpl(entity=todo.todoManager.model.Todo, querySpaceUid=&lt;gen:0&gt;, path=todo.todoManager.model.Todo)
-    - QuerySpaces
-       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=todo.todoManager.model.Todo)
-          - SQL table alias mapping - todo0_
-          - alias suffix - 0_
-          - suffixed key columns - {id1_0_0_}
-
-2015-06-26 13:22:35 DEBUG EntityLoader:146 - Static select for entity todo.todoManager.model.Todo [PESSIMISTIC_FORCE_INCREMENT]: select todo0_.id as id1_0_0_, todo0_.text as text2_0_0_, todo0_.title as title3_0_0_ from Todo todo0_ where todo0_.id=? for update
-2015-06-26 13:22:35 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@c35172e]
-2015-06-26 13:22:35 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : text
-2015-06-26 13:22:35 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : title
-2015-06-26 13:22:35 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
-2015-06-26 13:22:35 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace &lt;gen:0&gt;
-2015-06-26 13:22:35 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=todo.todoManager.model.Todo)
-    - Returns
-       - EntityReturnImpl(entity=todo.todoManager.model.Todo, querySpaceUid=&lt;gen:0&gt;, path=todo.todoManager.model.Todo)
-    - QuerySpaces
-       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=todo.todoManager.model.Todo)
-          - SQL table alias mapping - todo0_
-          - alias suffix - 0_
-          - suffixed key columns - {id1_0_0_}
-
-2015-06-26 13:22:35 DEBUG EntityLoader:146 - Static select for entity todo.todoManager.model.Todo [OPTIMISTIC]: select todo0_.id as id1_0_0_, todo0_.text as text2_0_0_, todo0_.title as title3_0_0_ from Todo todo0_ where todo0_.id=?
-2015-06-26 13:22:35 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = &lt;gen:0&gt; -&gt; org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3cc41abc]
-2015-06-26 13:22:35 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : text
-2015-06-26 13:22:35 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : title
-2015-06-26 13:22:35 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
-2015-06-26 13:22:35 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace &lt;gen:0&gt;
-2015-06-26 13:22:35 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=todo.todoManager.model.Todo)
-    - Returns
-       - EntityReturnImpl(entity=todo.todoManager.model.Todo, querySpaceUid=&lt;gen:0&gt;, path=todo.todoManager.model.Todo)
-    - QuerySpaces
-       - EntityQuerySpaceImpl(uid=&lt;gen:0&gt;, entity=todo.todoManager.model.Todo)
-          - SQL table alias mapping - todo0_
-          - alias suffix - 0_
-          - suffixed key columns - {id1_0_0_}
-
-2015-06-26 13:22:35 DEBUG EntityLoader:146 - Static select for entity todo.todoManager.model.Todo [OPTIMISTIC_FORCE_INCREMENT]: select todo0_.id as id1_0_0_, todo0_.text as text2_0_0_, todo0_.title as title3_0_0_ from Todo todo0_ where todo0_.id=?
-2015-06-26 13:22:35 DEBUG Loader:56 - Static select for action ACTION_MERGE on entity todo.todoManager.model.Todo: select todo0_.id as id1_0_0_, todo0_.text as text2_0_0_, todo0_.title as title3_0_0_ from Todo todo0_ where todo0_.id=?
-2015-06-26 13:22:35 DEBUG Loader:56 - Static select for action ACTION_REFRESH on entity todo.todoManager.model.Todo: select todo0_.id as id1_0_0_, todo0_.text as text2_0_0_, todo0_.title as title3_0_0_ from Todo todo0_ where todo0_.id=?
-2015-06-26 13:22:35 DEBUG SessionFactoryRegistry:67 - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@781f10f2
-2015-06-26 13:22:35 DEBUG SessionFactoryRegistry:89 - Registering SessionFactory: e68d57ba-7f5f-4fd7-b60d-db0c969e67b6 (&lt;unnamed&gt;)
-2015-06-26 13:22:35 DEBUG SessionFactoryRegistry:96 - Not binding SessionFactory to JNDI, no JNDI name configured
-2015-06-26 13:22:35 DEBUG SessionFactoryImpl:505 - Instantiated session factory
-2015-06-26 13:22:35 INFO  SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
-2015-06-26 13:22:35 INFO  SchemaUpdate:218 - HHH000102: Fetching database metadata
-2015-06-26 13:22:35 INFO  SchemaUpdate:230 - HHH000396: Updating schema
-2015-06-26 13:22:35 DEBUG Configuration:3805 - Processing hbm.xml files
-2015-06-26 13:22:35 DEBUG Configuration:3835 - Process annotated classes
-2015-06-26 13:22:35 DEBUG Configuration:1484 - Processing fk mappings (*ToOne and JoinedSubclass)
-2015-06-26 13:22:35 DEBUG Configuration:1689 - Processing extends queue
-2015-06-26 13:22:35 DEBUG Configuration:1747 - Processing extends queue
-2015-06-26 13:22:35 DEBUG Configuration:1692 - Processing collection mappings
-2015-06-26 13:22:35 DEBUG Configuration:1702 - Processing native query and ResultSetMapping mappings
-2015-06-26 13:22:35 DEBUG Configuration:1710 - Processing association property references
-2015-06-26 13:22:35 DEBUG Configuration:1732 - Creating tables&apos; unique integer identifiers
-2015-06-26 13:22:35 DEBUG Configuration:1733 - Processing foreign key constraints
-2015-06-26 13:22:35 INFO  TableMetadata:65 - HHH000261: Table found: todo.Todo
-2015-06-26 13:22:35 INFO  TableMetadata:66 - HHH000037: Columns: [id, text, title]
-2015-06-26 13:22:35 INFO  TableMetadata:68 - HHH000108: Foreign keys: []
-2015-06-26 13:22:35 INFO  TableMetadata:69 - HHH000126: Indexes: [primary]
-2015-06-26 13:22:35 DEBUG DefaultIdentifierGeneratorFactory:107 - Setting dialect [org.hibernate.dialect.MySQLDialect]
-2015-06-26 13:22:35 INFO  SchemaUpdate:267 - HHH000232: Schema update complete
-2015-06-26 13:22:35 DEBUG NamedQueryRepository:155 - Checking 0 named HQL queries
-2015-06-26 13:22:35 DEBUG NamedQueryRepository:171 - Checking 0 named SQL queries
-2015-06-26 13:22:35 DEBUG StatisticsInitiator:110 - Statistics initialized [enabled=false]
-2015-06-26 13:22:35 DEBUG DefaultListableBeanFactory:478 - Finished creating instance of bean &apos;hibernate4AnnotatedSessionFactory&apos;
-2015-06-26 13:22:35 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean &apos;hibernateUtil&apos;
-2015-06-26 13:22:35 DEBUG DefaultListableBeanFactory:450 - Creating instance of bean &apos;hibernateUtil&apos;
-2015-06-26 13:22:35 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean &apos;hibernateUtil&apos; to allow for resolving potential circular references
-2015-06-26 13:22:35 DEBUG DefaultListableBeanFactory:248 - Returning cached instance of singleton bean &apos;hibernate4AnnotatedSessionFactory&apos;
-2015-06-26 13:22:35 DEBUG DefaultListableBeanFactory:478 - Finished creating instance of bean &apos;hibernateUtil&apos;
-2015-06-26 13:22:35 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean &apos;bc&apos;
-2015-06-26 13:22:35 DEBUG DefaultListableBeanFactory:450 - Creating instance of bean &apos;bc&apos;
-2015-06-26 13:22:35 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean &apos;bc&apos; to allow for resolving potential circular references
-2015-06-26 13:22:35 DEBUG DefaultListableBeanFactory:478 - Finished creating instance of bean &apos;bc&apos;
-2015-06-26 13:22:35 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean &apos;mySaltGenerator&apos;
-2015-06-26 13:22:35 DEBUG DefaultListableBeanFactory:450 - Creating instance of bean &apos;mySaltGenerator&apos;
-2015-06-26 13:22:35 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean &apos;mySaltGenerator&apos; to allow for resolving potential circular references
-2015-06-26 13:22:35 DEBUG DefaultListableBeanFactory:478 - Finished creating instance of bean &apos;mySaltGenerator&apos;
-2015-06-26 13:22:35 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean &apos;hibernateStringEncryptor&apos;
-2015-06-26 13:22:35 DEBUG DefaultListableBeanFactory:450 - Creating instance of bean &apos;hibernateStringEncryptor&apos;
-2015-06-26 13:22:35 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean &apos;hibernateStringEncryptor&apos; to allow for resolving potential circular references
-2015-06-26 13:22:35 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean &apos;environmentVariablesConfiguration&apos;
-2015-06-26 13:22:35 DEBUG DefaultListableBeanFactory:450 - Creating instance of bean &apos;environmentVariablesConfiguration&apos;
-2015-06-26 13:22:35 DEBUG DefaultListableBeanFactory:523 - Eagerly caching bean &apos;environmentVariablesConfiguration&apos; to allow for resolving potential circular references
-2015-06-26 13:22:35 DEBUG DefaultListableBeanFactory:248 - Returning cached instance of singleton bean &apos;bc&apos;
-2015-06-26 13:22:35 DEBUG TypeConverterDelegate:585 - Custom Map type [org.bouncycastle.jce.provider.BouncyCastleProvider] does not allow for creating a copy - injecting original Map as-is
-2015-06-26 13:22:35 DEBUG TypeConverterDelegate:585 - Custom Map type [org.bouncycastle.jce.provider.BouncyCastleProvider] does not allow for creating a copy - injecting original Map as-is
-2015-06-26 13:22:35 DEBUG DefaultListableBeanFactory:478 - Finished creating instance of bean &apos;environmentVariablesConfiguration&apos;
-2015-06-26 13:22:35 DEBUG DefaultListableBeanFactory:478 - Finished creating instance of bean &apos;hibernateStringEncryptor&apos;
-2015-06-26 13:22:35 DEBUG DefaultListableBeanFactory:248 - Returning cached instance of singleton bean &apos;environmentVariablesConfiguration&apos;
-2015-06-26 13:22:35 DEBUG ClassPathXmlApplicationContext:697 - Unable to locate LifecycleProcessor with name &apos;lifecycleProcessor&apos;: using default [org.springframework.context.support.DefaultLifecycleProcessor@2dbf4cbd]
-2015-06-26 13:22:35 DEBUG DefaultListableBeanFactory:248 - Returning cached instance of singleton bean &apos;lifecycleProcessor&apos;
-2015-06-26 13:22:35 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;spring.liveBeansView.mbeanDomain&apos; in [systemProperties]
-2015-06-26 13:22:35 DEBUG PropertySourcesPropertyResolver:81 - Searching for key &apos;spring.liveBeansView.mbeanDomain&apos; in [systemEnvironment]
-2015-06-26 13:22:35 DEBUG PropertySourcesPropertyResolver:103 - Could not find key &apos;spring.liveBeansView.mbeanDomain&apos; in any property source. Returning [null]
-2015-06-26 13:22:35 DEBUG DefaultListableBeanFactory:248 - Returning cached instance of singleton bean &apos;hibernateUtil&apos;
-2015-06-26 13:22:35 DEBUG DefaultListableBeanFactory:248 - Returning cached instance of singleton bean &apos;dataSourceForJDBC&apos;
-2015-06-26 13:22:35 DEBUG AbstractTransactionImpl:160 - begin
-2015-06-26 13:22:35 DEBUG LogicalConnectionImpl:226 - Obtaining JDBC connection
-2015-06-26 13:22:35 DEBUG LogicalConnectionImpl:232 - Obtained JDBC connection
-2015-06-26 13:22:35 DEBUG JdbcTransaction:69 - initial autocommit status: true
-2015-06-26 13:22:35 DEBUG JdbcTransaction:71 - disabling autocommit
-2015-06-26 13:22:35 DEBUG ActionQueue:196 - Executing identity-insert immediately
-2015-06-26 13:22:35 DEBUG SQL:109 - insert into Todo (text, title) values (?, ?)
-Hibernate: insert into Todo (text, title) values (?, ?)
-2015-06-26 13:22:36 DEBUG IdentifierGeneratorHelper:94 - Natively generated identity: 64
-2015-06-26 13:22:36 DEBUG AbstractTransactionImpl:175 - committing
-2015-06-26 13:22:36 DEBUG AbstractFlushingEventListener:149 - Processing flush-time cascades
-2015-06-26 13:22:36 DEBUG AbstractFlushingEventListener:189 - Dirty checking collections
-2015-06-26 13:22:36 DEBUG AbstractFlushingEventListener:123 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
-2015-06-26 13:22:36 DEBUG AbstractFlushingEventListener:130 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
-2015-06-26 13:22:36 DEBUG EntityPrinter:114 - Listing entities:
-2015-06-26 13:22:36 DEBUG EntityPrinter:121 - todo.todoManager.model.Todo{id=64, text=text1, title=title1}
-2015-06-26 13:22:36 DEBUG JdbcTransaction:113 - committed JDBC Connection
-2015-06-26 13:22:36 DEBUG JdbcTransaction:126 - re-enabling autocommit
-2015-06-26 13:22:36 DEBUG LogicalConnectionImpl:246 - Releasing JDBC connection
-2015-06-26 13:22:36 DEBUG LogicalConnectionImpl:264 - Released JDBC connection
-2015-06-26 13:22:36 DEBUG DataSourceUtils:110 - Fetching JDBC Connection from DataSource
-2015-06-26 13:22:36 DEBUG DriverManagerDataSource:142 - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/todo]
-2015-06-26 13:22:36 DEBUG TodoDAO:66 - Encrypted string is PbK0WvzYRpWvr4kvThgBAg==
-2015-06-26 13:22:37 INFO  App:96 - *****************null
-</system-out>
+</system-err>
   </testcase>
 </testsuite>
