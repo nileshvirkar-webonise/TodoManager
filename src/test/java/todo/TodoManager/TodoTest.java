@@ -1,5 +1,11 @@
 package todo.TodoManager;
 
+import java.io.UnsupportedEncodingException;
+import java.lang.reflect.InvocationTargetException;
+
+import javax.crypto.BadPaddingException;
+import javax.crypto.IllegalBlockSizeException;
+
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -17,7 +23,13 @@ public class TodoTest{
 		TodoDAO todoDao = new TodoDAO();
 		todoDao.insertTodo(todo1);
 		
-		Todo todo2 = todoDao.getTodoForTitle("title1");
-		Assert.assertEquals(todo1.getText(), todo2.getText());
+		Todo todo2 = null;
+		try {
+			todo2 = todoDao.getTodoForTitle("title1");
+		} catch (SecurityException | IllegalArgumentException | InvocationTargetException | IllegalAccessException | NoSuchMethodException | IllegalBlockSizeException | BadPaddingException | UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		Assert.assertEquals("text1", todo2.getText());
 	}
 }

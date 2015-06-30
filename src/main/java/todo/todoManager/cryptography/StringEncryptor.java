@@ -3,107 +3,86 @@ package todo.todoManager.cryptography;
 import java.io.UnsupportedEncodingException;
 import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
+import java.security.Key;
 import java.security.NoSuchAlgorithmException;
-import java.security.Security;
-import java.security.spec.AlgorithmParameterSpec;
 import java.security.spec.InvalidKeySpecException;
 
 import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
-import javax.crypto.spec.IvParameterSpec;
-import javax.crypto.spec.SecretKeySpec;
+import javax.crypto.SecretKey;
+import javax.crypto.SecretKeyFactory;
+import javax.crypto.spec.PBEKeySpec;
+import javax.crypto.spec.PBEParameterSpec;
 
 import org.apache.commons.codec.binary.Base64;
-import org.apache.log4j.Logger;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
-
-import todo.todoManager.app.App;
 
 public class StringEncryptor {
+    String key1 = "Bar12345Bar12345"; // 128 bit key
+    Key aesKey = null;;
+    Cipher cipher = null;
 
-	private String key1 = "Bar12345Bar12345"; // 128 bit key
-	private Cipher cipher = null;
-	SecretKeySpec key;
+    PBEKeySpec pbeKeySpec;
+    PBEParameterSpec pbeParamSpec;
+    SecretKeyFactory keyFac;
+    SecretKey pbeKey;
+    
+    private static StringEncryptor stringEncryptor = null;
 
-	final static Logger logger = Logger.getLogger(App.class);
+    private StringEncryptor() throws NoSuchAlgorithmException, InvalidKeySpecException, InvalidKeyException, InvalidAlgorithmParameterException {
+        //Security.addProvider(new BouncyCastleProvider());
+        String cryptoAlgorithm = "PBEWITHSHA256AND128BITAES-CBC-BC";
+        byte[] salt =  "webonise".getBytes();
+        int count = 20;
+        pbeParamSpec = new PBEParameterSpec(salt, count);
+        pbeKeySpec = new PBEKeySpec(key1.toCharArray(), salt, count);
+        keyFac = SecretKeyFactory.getInstance("PBEWithMD5AndDES");
+        pbeKey = keyFac.generateSecret(pbeKeySpec);
+        
+        try {
+            cipher = Cipher.getInstance(pbeKey.getAlgorithm());
+        } catch (NoSuchPaddingException e) {
+            e.printStackTrace();
+        }
+    }
 
-	private byte[] ivBytes = new byte[] { 0x00, 0x01, 0x02, 0x03, 0x04, 0x05,
-			0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f };
-	private static StringEncryptor stringEncryptor = null;
-	AlgorithmParameterSpec paramSpec = null;
+    public static StringEncryptor getInstance() {
+        if (stringEncryptor == null) {
+                try {
+                    stringEncryptor = new StringEncryptor();
+                } catch (InvalidKeyException | NoSuchAlgorithmException
+                        | InvalidKeySpecException
+                        | InvalidAlgorithmParameterException e) {
+                    e.printStackTrace();
+                }
+        }
+        return stringEncryptor;
+    }
 
-	private StringEncryptor() throws NoSuchAlgorithmException,
-			InvalidKeySpecException, InvalidKeyException,
-			InvalidAlgorithmParameterException {
+    public String getEncryptedString(String source) throws IllegalBlockSizeException,
+            BadPaddingException, InvalidAlgorithmParameterException {
+        byte[] encrypted = null;
+        try {
+            cipher.init(Cipher.ENCRYPT_MODE, pbeKey, pbeParamSpec);
+            encrypted = cipher.doFinal(source.getBytes());
+        } catch (InvalidKeyException e) {
+            e.printStackTrace();
+        }
+        return Base64.encodeBase64String(encrypted);
+    }
 
-		key1 = "Bar12345Bar12345";
-		
-		try {
-			 key = new SecretKeySpec(key1.getBytes(),
-					"AES");
-			logger.info("*****************" + key);
-			
-			paramSpec = new IvParameterSpec(ivBytes);
-
-			// Decrypt the message
-			Cipher cipher = Cipher.getInstance(
-					"PBEWITHSHA256AND128BITAES-CBC-BC",
-					new org.bouncycastle.jce.provider.BouncyCastleProvider());
-
-			cipher.init(Cipher.DECRYPT_MODE, key, new IvParameterSpec(ivBytes));
-
-		} catch (NoSuchPaddingException e) {
-			e.printStackTrace();
-		}
-	}
-
-	public static StringEncryptor getInstance() {
-		if (stringEncryptor == null) {
-			try {
-				stringEncryptor = new StringEncryptor();
-			} catch (InvalidKeyException | NoSuchAlgorithmException
-					| InvalidKeySpecException
-					| InvalidAlgorithmParameterException e) {
-				e.printStackTrace();
-			}
-		}
-		return stringEncryptor;
-	}
-
-	/*
-	 * public String getEncryptedString(String source)
-	 * 
-	 * throws IllegalBlockSizeException, BadPaddingException,
-	 * InvalidAlgorithmParameterException, InvalidKeySpecException { byte[]
-	 * encrypted = null; try { cipher =
-	 * Cipher.getInstance("AES/CBC/PKCS7Padding",new
-	 * org.bouncycastle.jce.provider.BouncyCastleProvider());
-	 * cipher.init(Cipher.DECRYPT_MODE,key,new IvParameterSpec(ivBytes));
-	 * encrypted = cipher.doFinal(source.getBytes()); } catch
-	 * (InvalidKeyException | NoSuchAlgorithmException | NoSuchPaddingException
-	 * e) { e.printStackTrace(); } return Base64.encodeBase64String(encrypted);
-	 * }
-	 */
-
-	public String getDecryptedString(String source)
-			throws IllegalBlockSizeException, BadPaddingException,
-			UnsupportedEncodingException {
-
-		Security.addProvider(new BouncyCastleProvider());
-		String decrypted = null;
-		try {
-			cipher = Cipher.getInstance("PBEWITHSHA256AND128BITAES-CBC-BC",
-					new org.bouncycastle.jce.provider.BouncyCastleProvider());
-			logger.info("*****************" + key);
-			cipher.init(Cipher.DECRYPT_MODE, key, paramSpec);
-		} catch (InvalidKeyException | NoSuchAlgorithmException
-				| NoSuchPaddingException | InvalidAlgorithmParameterException e) {
-			e.printStackTrace();
-		}
-		byte[] bytes = Base64.decodeBase64(source);
-		decrypted = new String(cipher.doFinal(bytes));
-		return decrypted.toString();
-	}
+    public String getDecryptedString(String source) throws IllegalBlockSizeException,
+            BadPaddingException, UnsupportedEncodingException {
+        String decrypted = null;
+            try {
+                cipher.init(Cipher.DECRYPT_MODE, pbeKey, pbeParamSpec);
+            } catch (InvalidKeyException | InvalidAlgorithmParameterException e) {
+                e.printStackTrace();
+            }
+            byte[] bytes = Base64.decodeBase64(source);
+            decrypted = new String(cipher.doFinal(bytes));
+        return decrypted.toString();
+    }
 }
+

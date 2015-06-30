@@ -10,6 +10,8 @@ import org.hibernate.annotations.Type;
 import org.hibernate.annotations.TypeDef;
 import org.jasypt.hibernate4.type.EncryptedStringType;
 
+import todo.todoManager.Annotations.Encrypted;
+
 @Entity
 @TypeDef(name = "encryptedString", typeClass = EncryptedStringType.class, parameters = { @Parameter(name = "encryptorRegisteredName", value = "strongHibernateStringEncryptor") })
 public class Todo {
@@ -20,6 +22,7 @@ public class Todo {
 	
 	String title;
 	
+	@Encrypted
 	@Type(type = "encryptedString")
 	String text;
 	
