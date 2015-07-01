@@ -18,7 +18,6 @@ import todo.todoManager.dao.TodoDAO;
 public class BeanDecryptor {
 
     final static Logger logger = Logger.getLogger(TodoDAO.class);
-    private StringEncryptor stringEncryptor = null;
 
     public BeanDecryptor() {
         super();
@@ -26,7 +25,6 @@ public class BeanDecryptor {
 
     public static Object encryptBean(Object object, Class objClass) {
 
-        String decryptedText = "text1";
         for ( Field field : objClass.getDeclaredFields() ) {
             Class<?> type = field.getType();
             String name = field.getName();

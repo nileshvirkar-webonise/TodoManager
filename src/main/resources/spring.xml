@@ -17,15 +17,6 @@
 		<property name="password" value="${password}" />
 	</bean>
 
-	<bean id="dataSourceForJDBC"
-		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-		<property name="driverClassName" value="${driverClassName}" />
-		<property name="url" value="${url}" />
-		<property name="username" value="${username}" />
-		<property name="password" value="${password}" />
-	</bean>
-
-
 	<bean id="hibernate4AnnotatedSessionFactory"
 		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
@@ -46,36 +37,5 @@
 	<bean id="hibernateUtil" class="todo.todoManager.hibernateUtil.HibernateUtil">
 		<property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory"></property>
 	</bean>
-
-	<!-- jasypt configuration -->
-
-	<bean id="bc" class="org.bouncycastle.jce.provider.BouncyCastleProvider">
-	</bean>
-
-	<bean id="mySaltGenerator" class="org.jasypt.salt.StringFixedSaltGenerator">
-		<constructor-arg name="salt" value="123456789012345671" />
-<!-- 		<constructor-arg name="charset" value="UTF-8" /> -->
-	</bean>
-	<bean id="hibernateStringEncryptor"
-		class="org.jasypt.hibernate4.encryptor.HibernatePBEStringEncryptor"
-		lazy-init="false">
-		<property name="config" ref="environmentVariablesConfiguration" />
-		<property name="registeredName">
-			<value>strongHibernateStringEncryptor</value>
-		</property>
-		
-	</bean>
-	<bean id="environmentVariablesConfiguration"
-		class="org.jasypt.encryption.pbe.config.EnvironmentStringPBEConfig">
-		<property name="algorithm" value="PBEWITHSHA256AND128BITAES-CBC-BC" />
-		<property name="password" value="Bar12345Bar12345" />
-<!--  		<property name="saltGenerator"  ref="mySaltGenerator"></property>  -->
-		<property name="provider"  ref="bc"></property>
-	</bean>
-	
-
-
-
-
 
 </beans>
