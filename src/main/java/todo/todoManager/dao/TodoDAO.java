@@ -43,10 +43,9 @@ public class TodoDAO {
 
     public void insertTodo(Todo todo) {
         SessionFactory sessionFactory = hibernateUtil.getSessionFactory();
-        Todo todo1 = new Todo(1, "title1", "text1");
         Session session = sessionFactory.openSession();
         Transaction tx = session.beginTransaction();
-        session.save(todo1);
+        session.save(todo);
         tx.commit();
         session.close();
     }
