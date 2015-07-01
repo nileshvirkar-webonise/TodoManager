@@ -1,8 +1,0 @@
-/home/webonise/Documents/TodoManager/TodoManager/src/main/java/todo/todoManager/app/App.java
-/home/webonise/Documents/TodoManager/TodoManager/src/main/java/todo/todoManager/Annotations/Encrypted.java
-/home/webonise/Documents/TodoManager/TodoManager/src/main/java/todo/todoManager/cryptography/BeanDecryptor.java
-/home/webonise/Documents/TodoManager/TodoManager/src/main/java/todo/todoManager/model/Todo.java
-/home/webonise/Documents/TodoManager/TodoManager/src/main/java/todo/todoManager/model/package-info.java
-/home/webonise/Documents/TodoManager/TodoManager/src/main/java/todo/todoManager/hibernateUtil/HibernateUtil.java
-/home/webonise/Documents/TodoManager/TodoManager/src/main/java/todo/todoManager/cryptography/StringEncryptor.java
-/home/webonise/Documents/TodoManager/TodoManager/src/main/java/todo/todoManager/dao/TodoDAO.java

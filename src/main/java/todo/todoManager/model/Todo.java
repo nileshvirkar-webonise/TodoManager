@@ -23,7 +23,6 @@ public class Todo {
 	String title;
 	
 	@Encrypted
-	@Type(type = "encryptedString")
 	String text;
 	
 	public Todo() {
