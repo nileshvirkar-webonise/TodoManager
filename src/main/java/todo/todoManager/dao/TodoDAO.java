@@ -14,6 +14,7 @@ import org.apache.log4j.Logger;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -41,9 +42,13 @@ public class TodoDAO {
     }
 
     public void insertTodo(Todo todo) {
-        Todo encryptedTodo = (Todo) BeanDecryptor.encryptBean(todo, Todo.class);
-        String SQL = "insert into Todo (title, text) values (?, ?)";
-        jdbcTemplate.update(SQL, encryptedTodo.getTitle(), encryptedTodo.getText());
+        SessionFactory sessionFactory = hibernateUtil.getSessionFactory();
+        Todo todo1 = new Todo(1, "title1", "text1");
+        Session session = sessionFactory.openSession();
+        Transaction tx = session.beginTransaction();
+        session.save(todo1);
+        tx.commit();
+        session.close();
     }
 
     public List<Todo> getTodos() {
