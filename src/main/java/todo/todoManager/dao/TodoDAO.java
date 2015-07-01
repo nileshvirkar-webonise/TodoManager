@@ -44,6 +44,10 @@ public class TodoDAO {
         Todo encryptedTodo = (Todo) BeanDecryptor.encryptBean(todo, Todo.class);
         String SQL = "insert into Todo (title, text) values (?, ?)";
         jdbcTemplate.update(SQL, encryptedTodo.getTitle(), encryptedTodo.getText());
+        
+        SessionFactory sessionFactory = hibernateUtil.getSessionFactory();
+        Session session = sessionFactory.openSession();
+        
     }
 
     public List<Todo> getTodos() {
