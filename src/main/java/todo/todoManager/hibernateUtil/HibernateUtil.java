@@ -6,8 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class HibernateUtil {
 	@Autowired
 	private SessionFactory sessionFactory;
-	
-//	private static HibernateUtil sigletanObject;
 
 	private HibernateUtil() {
 		super();

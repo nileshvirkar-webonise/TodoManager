@@ -23,11 +23,11 @@ public class Todo {
 	String title;
 	
 	@Encrypted
+	@Type(type = "text")
 	String text;
 	
 	public Todo() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Todo(int id, String title, String text) {

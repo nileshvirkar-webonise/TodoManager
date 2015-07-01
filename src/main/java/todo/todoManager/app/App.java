@@ -12,22 +12,20 @@ import todo.todoManager.dao.TodoDAO;
 import todo.todoManager.model.Todo;
 
 public class App {
-	final static Logger logger = Logger.getLogger(App.class);
+    final static Logger logger = Logger.getLogger(App.class);
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		Todo todo1 = new Todo(1, "title1", "text1");
-		TodoDAO todoDao = new TodoDAO();
-		todoDao.insertTodo(todo1);
+        Todo todo1 = new Todo(1, "title1", "text1");
+        TodoDAO todoDao = new TodoDAO();
+        todoDao.insertTodo(todo1);
 
-		Todo todo = null;
-		try {
-			todo = todoDao.getTodoForTitle("title1");
-		} catch (SecurityException | IllegalArgumentException | InvocationTargetException | IllegalAccessException | NoSuchMethodException | IllegalBlockSizeException | BadPaddingException | UnsupportedEncodingException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-			logger.info(todo.toString());
-		
-	}
+        Todo todo = null;
+        try {
+            todo = todoDao.getTodoForTitle(1);
+        } catch (SecurityException | IllegalArgumentException | InvocationTargetException | IllegalAccessException | NoSuchMethodException | IllegalBlockSizeException | BadPaddingException | UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+        logger.info(todo.toString());
+    }
 }
